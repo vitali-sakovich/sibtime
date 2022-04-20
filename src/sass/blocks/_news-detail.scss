@@ -1,0 +1,134 @@
+.content_news-detail{
+    position: relative;
+    padding-bottom: 138px;
+}
+.title-block_news .title-main{
+    padding-left: 106px;
+}
+.news-date{
+    position: absolute;
+    top: -40px;
+    left: 8.3%;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.8;
+    color: #7c7c7c;
+}
+.news__conatiner{
+    padding: 33px 10.3% 50px calc(8.3% + 106px);
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.59;
+    color: #000;
+}
+.news__img{
+    width: 62.500vw;
+    max-width: 900px;
+    margin-bottom: 45px;
+}
+.news__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.news__conatiner p{
+    margin-bottom: 30px;
+}
+.news__conatiner ul{
+    display: block;
+    list-style: none;
+    padding-left: 40px;
+    margin-bottom: 35px;
+}
+.news__conatiner ul li{
+    margin-bottom: 20px;
+}
+.news__video{
+    display: flex;
+    position: relative;
+    width: 62.500vw;
+    max-width: 900px;
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+.news__video img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.news-gallery{
+    margin-left: -73px;
+    width: 79.531vw;
+}
+.content_news-detail .social-share{
+    flex-direction: row;
+    align-items: center;
+    padding-left: calc(8.3% + 106px);
+}
+.content_news-detail .social-share .social-share__text{
+    margin-bottom: 0;
+    margin-right: 40px;
+}
+.content_news-detail .social-share #uSocial .uscl-bar.uscl-size24 .ico_uscl, 
+.content_news-detail .social-share .uSocial-Share .uscl-bar.uscl-size24 .ico_uscl{
+    width: 36px;
+    height: 36px;
+}
+.content_news-detail .social-share .ico_uscl-telegram:before{
+    display: block;
+    font-size: 26px;
+    margin-top: 5px;
+}
+.content_news-detail .social-share .ico_uscl-vk:before{
+    display: block;
+    font-size: 30px;
+    margin-top: 7px;
+}
+.content_news-detail .social-share .ico_uscl-fb:before{
+    display: block;
+    font-size: 30px;
+    margin-top: 7px;
+}
+.content_news-detail .social-share .ico_uscl-ok:before{
+    display: block;
+    font-size: 30px;
+    margin-top: 7px;
+}
+.content_news-detail .social-share .ico_uscl-vi:before,
+.content_news-detail .social-share .ico_uscl-viber:before{
+    display: block;
+    font-size: 30px;
+    margin-top: 7px;
+}
+.content_news-detail .social-share .ico_uscl-wa:before,
+.content_news-detail .social-share .ico_uscl-whatsapp:before{
+    display: block;
+    font-size: 30px;
+    margin-top: 7px;
+}
+
+.content_news-detail .social-share .uscl-item{
+    filter: grayscale(0);
+    margin-right: 18px;
+}
+.news-other{
+    margin-top: 92px;
+    padding: 0 8.3%;
+}
+.news-other__title{
+    display: block;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: normal;
+    color: #000;
+    margin-bottom: 47px;
+}
+.news-other__row{
+    display: flex;
+    justify-content: space-between;
+}
+.news-other .news-card{
+    width: 38.594vw;
+    margin-right: 0;
+    height: auto;
+}

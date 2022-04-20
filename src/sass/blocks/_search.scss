@@ -1,0 +1,215 @@
+.content_search{
+    padding-top: 20px;
+}
+.sort-block{
+    padding: 0 8.3%;
+}
+.sort-block{
+    display: flex;
+    align-items: center;
+}
+.sort-text{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    color: #5c5c5c;
+    margin-right: 15px;
+}
+.sort{
+    margin-right: 22px; 
+}
+.sort-select{
+    border-radius: 20px;
+    background-color: #fff;
+    border: none;
+    height: 40px;
+}
+.sort:nth-child(2) .sort-select{
+    width: 254px;
+}
+.sort:nth-child(3) .sort-select{
+    width: 215px;
+}
+.sort-select .list{
+    width: 100%;
+}
+.sort-select.nice-select .option.selected{
+    font-weight: normal;
+}
+.sort-select .current{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #000000;
+}
+.sort-select .option{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #000000;
+}
+.sort-select.nice-select:after{
+    width: 12px;
+    height: 6px;
+    background-color: #8a8a8a;
+    border: none;
+    transform: translate(0, -50%);
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    margin-top: 0;
+    right: 23px;
+}
+.sort-select.nice-select.open:after{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.filters{
+    width: 90%;
+    min-width: 424px;
+    max-width: 474px;
+    background: #fff;
+    margin-right: 4px;
+}
+.catalog-container{
+    display: flex;
+    margin-top: 21px;
+}
+.catalog-cards .card-product{
+    width: calc(100% / 2 - 2px);
+    margin-bottom: 13px;
+}
+.catalog-cards{
+    display: flex;
+    flex-flow: row wrap;
+}
+.catalog-cards .card-product:nth-child(even){
+    margin-right: 0;
+}
+.pogination{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.catalog-cards .pogination{
+    margin-top: 47px;
+    margin-bottom: 70px;
+    width: 100%;
+    padding-left: 4.3%;
+}
+.pogination__arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: solid 1px #cacaca;
+    background: #fff;
+    transition: 0.3s;
+}
+.catalog-container .pogination__arrow{
+    width: 10%;
+    min-width: 10%;
+}
+.pogination__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 81px;
+    height: 40px;
+    border: solid 1px #cacaca;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.22;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.catalog-container .pogination__link{
+    width: 10%;
+    min-width: 10%;
+}
+.pogination__link.active{
+    border: solid 1px #3d4a62;
+    background-color: #3d4a62;
+    color: #fff;
+    cursor: default;
+}
+.pogination__link:hover{
+    border: solid 1px #3d4a62;
+    background-color: #3d4a62;
+    color: #fff;
+    transition: 0.3s;
+}
+.pogination__arrow:hover{
+    border: solid 1px #3d4a62;
+    background-color: #3d4a62;
+    transition: 0.3s;
+}
+.pogination__arrow:hover svg g{
+    fill: #fff;
+    fill-opacity: 1;
+    transition: 0.3s;
+}
+
+.pogination__three-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+
+.catalog-container .pogination__three-dots{
+    width: 6.5%;
+}
+
+.pogination__arrow_prev{
+    margin-right: 2.6%;
+}
+.pogination__arrow_next{
+    margin-left: 2.6%;
+}
+// .catalog-container .card-product__content{
+//     padding-left: 9.5%;
+// }
+// .catalog-container .card-product__labels{
+//     left: 9.5%;
+// }
+.btn-show-filters{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    background-color: #e9e9e9;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.35;
+    color: #000;
+    margin-bottom: 33px;
+}
+.no-result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    min-height: 180px;
+    margin: 0 8.3% 80px;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: normal;
+    color: #929292;
+    padding: 20px 50px;
+    text-align: center;
+}
+.content_no-result{
+    padding-top: 34px;
+    padding-bottom: 69px;
+}
+.search-not .no-result span{
+    max-width: 717px;
+}
+.no-result a{
+    text-decoration: none;
+    color: #929292;
+}

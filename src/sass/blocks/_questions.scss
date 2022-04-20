@@ -1,0 +1,48 @@
+.content_questions{
+    padding: 30px 13.9% 69px 8.3%;
+}
+.accordion__title{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: normal;
+    color: #000;
+    margin-bottom: 27px;
+}
+.accordion__btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 28px 22px 26px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: normal;
+    color: #000;
+    background: #fff;
+    cursor: pointer;
+}
+.accordion__content{
+    background: #fff;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.59;
+    color: #000;
+    max-height: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.accordion__text{
+    padding: 5px 126px 30px 26px;
+}
+.accordion__btn.active img{
+    transform: rotate(180deg);
+}
+.accordion__block{
+    margin-bottom: 27px;
+}
+.accordion__btn span{
+    padding-right: 20px;
+}
+// .accordion__content.active{
+   
+// }

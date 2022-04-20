@@ -1,0 +1,414 @@
+.wrapper{
+    padding: 0 8.3%;
+}
+.account{
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.personal-card_row{
+    display: flex;
+    justify-content: space-between;
+}
+.personal-card_title{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: normal;
+    color: #000000;
+}
+.personal-card{
+    padding: 38px 42px 32px 44px;
+    background: #fff;
+}
+.card{
+    margin-top: 38px;
+}
+.card_row{
+    display: flex;
+    margin-bottom: 20px;
+}
+.card_title{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #000000;
+}
+.card_text{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #000000;
+}
+.order-history_card .card_left .card_text{
+    min-width: 191px;
+}
+.personal-card .card_title{
+    min-width: 70px;
+    margin-right: 43px;
+}
+.personal-card_buttons .btn-border{
+    width: calc(100% / 2 - 13px);
+    margin-bottom: 18px;
+}
+.personal-card_buttons .btn-border:last-child{
+    margin-bottom: 0;
+}
+.personal-card_buttons{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 37px;
+}
+.personal-card_row .personal-card{
+    width: calc(100% / 2 - 4px);
+    max-width: 600px;
+    height: 100%;
+}
+.personal-card_row{
+    max-width: 1196px;
+}
+.personal-simplebar{
+    margin-top: 38px;
+}
+.profile_address{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 6px;
+}
+.profile_buttons{
+    display: flex;
+}
+.button_link{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.3;
+    color: #525252;
+    margin-right: 20px;
+    border-bottom: dotted 1px #3b3b3b;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.button_link.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    width: 145px;
+    height: 24px;
+    border-radius: 2px;
+    background-color: #dd881b;
+    border: none;
+    cursor: default;
+}
+.button_link:hover{
+    border-bottom: none;
+    transition: 0.3s;
+}
+.profile_col{
+    margin-bottom: 25px;
+}
+.personal-card_profile .btn-border{
+    width: 100%;
+    margin-right: 50px;
+}
+.personal-card_profile{
+    padding-right: 0;
+}
+.personal-simplebar{
+    height: 226px;
+}
+.order-history_header{
+    display: flex;
+    align-items: center;
+}
+.order-history{
+    margin-top: 40px;
+    padding-bottom: 53px;
+}
+.sort_size{
+    width: 336px;
+    margin-left: 54px;
+}
+.sort_size .sort-select{
+    width: 100%;
+}
+.order-history_card{
+    margin-top: 34px;
+    background: #fff;
+    position: relative;
+    padding-bottom: 7px;
+}
+.order-history_status{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 325px;
+    height: 48px;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    color: #fff;
+    position: absolute;
+    top: 25px;
+    left: -8px;
+}
+.order-history_status_green{
+    background-color: green;
+}
+.order-history_status_yellow{
+    background-color: #d3ad36;
+}
+.order-history_card .card_block{
+    padding-top: 109px;
+}
+.order-history_card .card{
+    margin-top: 0;
+    padding-left: 40px;
+}
+.order-history_card .card_right{
+    padding-right: 40px;
+}
+.button_more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    height: 48px;
+    width: calc(100% - 14px);
+    margin: 0 7px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    color: #000000;
+    text-decoration: none;
+}
+.order-history_card .card_title{
+    min-width: 155px;
+    margin-right: 35px;
+}
+.order-history_card .card_block{
+    display: flex;
+    padding-bottom: 10px;
+}
+.order-history_card .card_left{
+    margin-right: 4.688vw;
+}
+.details_row{
+    display: flex;
+    margin-bottom: 13px;
+}
+.details_img-inner{
+    width: 71px;
+    height: 72px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+}
+.details_img-inner img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.details{
+    padding-top: 40px;
+}
+.order-list__title{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: normal;
+    color: #000000;
+    margin-left: 40px;
+}
+.details_block{
+    padding-left: 34px;
+    margin-top: 18px;
+    padding-bottom: 32px;
+}
+.details_left{
+    padding-top: 11px;
+    padding-left: 11px;
+}
+.details_title{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #4055c8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.details_title:hover{
+    color: #df9400;
+    transition: 0.3s;
+}
+.details_price-row{
+    display: flex;
+    margin-top: 8px;
+}
+.details_count{
+    margin: 0 33px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.44;
+    color: #000000;
+}
+.details_price2{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.44;
+    color: #000000;
+}
+.detail__total-block{
+    display: flex;
+    align-items: center;
+    border-top: solid 1px #e3e3e3;
+    padding: 39px 40px 32px 115px;
+}
+.detail__total-name{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #000000;
+    margin-right: 84px;
+}
+.detail__total-price{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.11;
+    color: #000000;
+}
+.account .pogination__arrow,
+.account .pogination__link{
+    width: 11.4%;
+}
+.pogination__three-dots{
+    width: 7.5%;
+}
+.bonuses-account__img{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 41%;
+}
+.bonuses-account__block{
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 28px 34px 44px;
+    background-color: #fff;
+    width: 69%;
+    max-width: 960px;
+    margin-bottom: 38px;
+    position: relative;
+}
+.bonuses-account__block::after{
+    content: url(../img/percent.webp);
+    position: absolute;
+    right: -258px;
+    top: 0;
+    z-index: -1;
+}
+.bonuses-account__block .personal-card_title{
+    margin-bottom: 34px;
+    margin-top: 20px;
+}
+.bonuses-account__link{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    color: #4055c8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.bonuses-account__link:hover{
+    color: #df9400;
+    transition: color 0.3s;
+}
+.bonuses-account__block .card_title{
+    width: 130px;
+    margin-right: 42px;
+}
+.subscriptions-account{
+    padding: 41px 0 36px 44px;
+    background-color: #fff;
+    width: 69%;
+    max-width: 960px;
+    margin-bottom: 39px;
+    position: relative;
+}
+.subscriptions-account::after{
+    content: url(../img/accaunt-mail.svg);
+    position: absolute;
+    right: -237px;
+    top: 0;
+}   
+.subscriptions-account .personal-card_title{
+    margin-bottom: 22px;
+}
+.subscriptions-account__checkboxs{
+    margin-top: 26px;
+}
+.subscriptions-account__checkbox{
+    display: none;
+}
+.subscriptions-account__check{
+    display: block;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    border: solid 1px #a3a3a3;
+    margin-right: 8px;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.subscriptions-account__label{
+    display: flex;
+    align-items: center;
+    margin-right: 54px;
+}
+.subscriptions-account__checkboxs{
+    display: flex;
+    align-items: center;
+}
+.subscriptions-account__check-text{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.38;
+    color: #5b5b5b;
+}
+.subscriptions-account__check::before{
+    content: url(../img/check.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.subscriptions-account__checkbox:checked ~ .subscriptions-account__check::before{
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.subscriptions-account__checkbox:checked ~ .subscriptions-account__check{
+    background-color: #4c4c4c;
+    border: solid 1px #4c4c4c;
+}

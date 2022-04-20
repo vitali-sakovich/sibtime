@@ -1,0 +1,78 @@
+.content_stylist{
+    padding-top: 40px;
+    padding-bottom: 108px;
+}
+.content_stylist .text-md{
+    padding: 0 8.3%;
+    width: 87.813vw;
+    margin-bottom: 48px;
+}
+.online-stylist{
+    display: flex;
+    padding-left: 8.3%;
+    background: #fff;
+    justify-content: space-between;
+}
+.stylist-form__box{
+    padding: 52px 70px 60px 0;
+}
+.stylist-form__step{
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    color: #000;  
+    margin-bottom: 17px;
+}
+.stylist-form__title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    color: #000;
+}
+.stylist-form .label-radio{
+    margin-right: 28px;
+    margin-bottom: 20px;
+}
+.stylist-form .label-radio .radio-text{
+    min-width: 82px;
+}
+.stylist-form .modal__radio-row{
+    margin-top: 35px;
+    margin-bottom: 12px;
+}
+.stylist-form__text{
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.75;
+    color: #000;
+}
+.stylist-form__btn-box{
+    display: flex;
+    margin-top: 63px;
+}
+.stylist-form__tab{
+    display: none;
+}
+.stylist-form__btn-box .btn-border{
+    width: 207px;
+    margin-right: 20px;
+}
+.stylist-form__btn-box .btn-border:last-child{
+    margin-right: 0;
+}
+.stylist-img{
+    width: 640px;
+    min-width: 640px;
+}
+.stylist-img img{
+    width: 100%;
+    object-fit: contain;
+}
+.stylist-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}

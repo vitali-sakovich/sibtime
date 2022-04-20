@@ -1,0 +1,293 @@
+ /********* ОНЛАЙН ПРИМЕРКА **********/ 
+.modal-fitting {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1100;
+}
+.fitting-desktop {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  z-index: 100;
+  background: #f8f9f9;
+  width: 640px;
+  -webkit-animation-name: modal-hidden-search;
+  animation-name: modal-hidden-search;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+.fitting-desktop__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 57px 72px 0 58px;
+}
+.fitting-desktop__img {
+  display: flex;
+  justify-content: flex-end;
+  height: calc(100% - 260px);
+  align-items: center;
+  overflow: hidden;
+}
+.fitting-desktop .modal-text {
+  margin-left: 58px;
+  margin-bottom: 36px;
+}
+.modal-fitting.modal.open .fitting-desktop,
+.modal-fitting.modal.open .fitting-mobile,
+.modal-fitting.modal.open .fitting-horizontal {
+  -webkit-animation-name: modal-open-search;
+  animation-name: modal-open-search;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.fitting-mobile {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  z-index: 100;
+  background: #fff;
+  width: 100vw;
+  -webkit-animation-name: modal-hidden-search;
+  animation-name: modal-hidden-search;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+.fitting-mobile__inner {
+  padding: 28px 54px 0 20px;
+  z-index: 10;
+  position: relative;
+}
+.fitting-mobile__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.fitting-mobile__header .title_modal {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 19px;
+  color: #000000;
+  margin-top: 5px;
+}
+.fitting-mobile .modal-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #5c5c5c;
+}
+.fitting-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+.fitting-img img {
+  width: calc(var(--input-value) + 100.8vw);
+}
+.fitting-range {
+  position: relative;
+  z-index: 10;
+}
+:root {
+  --input-value: 0px;
+}
+.fitting-range {
+  margin-bottom: 26px;
+  height: 40px;
+  padding: 0 28px;
+}
+.range-input {
+  width: 100%;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type='range']:focus {
+  outline: none;
+}
+
+input[type='range']::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #d9e0e7;
+  border-radius: 100px;
+}
+
+input[type='range']:focus::-webkit-slider-runnable-track {
+  background: #d9e0e7;
+}
+
+input[type='range']::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #d9e0e7;
+  border-radius: 100px;
+}
+
+input[type='range']::-ms-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+input[type='range']::-ms-fill-lower {
+  background: #d9e0e7;
+  border-radius: 100px;
+}
+
+input[type='range']:focus::-ms-fill-lower {
+  background: #d9e0e7;
+}
+
+input[type='range']::-ms-fill-upper {
+  background: #d9e0e7;
+  border-radius: 100px;
+}
+
+input[type='range']:focus::-ms-fill-upper {
+  background: #d9e0e7;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: url('../img/range-thumb.svg'), #e60c2d;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0px 7px 6px -2px rgba(0, 0, 0, 0.139833);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -18px;
+}
+
+/* All the same stuff for Firefox */
+input[type='range']::-moz-range-thumb {
+  background: url('../img/range-thumb.svg'), #e60c2d;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0px 7px 6px -2px rgba(0, 0, 0, 0.139833);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type='range']::-ms-thumb {
+  background: url('../img/range-thumb.svg'), #e60c2d;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0px 7px 6px -2px rgba(0, 0, 0, 0.139833);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.fitting-horizontal {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  z-index: 100;
+  background: #fff;
+  width: 100vw;
+  -webkit-animation-name: modal-hidden-search;
+  animation-name: modal-hidden-search;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+.fitting-horizontal__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.fitting-horizontal__header .title_modal {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 19px;
+}
+.fitting-horizontal__header .close-modal {
+  margin: 0;
+}
+.fitting-horizontal__inner {
+  padding: 28px 26px 0 20px;
+  position: relative;
+  z-index: 10;
+}
+.fitting-horizontal .modal-text {
+  color: #5c5c5c;
+}
+.fitting-horizontal__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+@media (max-width: 599.98px) {
+  .fitting-mobile {
+    display: flex;
+  }
+  .fitting-desktop {
+    display: none;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 999.98px) {
+  .fitting-horizontal {
+    display: block;
+  }
+}
+@media (max-width: 699px) {
+  .fitting-desktop {
+    width: 100vw;
+  }
+}

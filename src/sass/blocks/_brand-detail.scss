@@ -1,0 +1,222 @@
+.content_brand{
+    padding-bottom: 146px;
+}
+.bran-text__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 8.3%;
+    margin-bottom: 59px;
+}
+.bran-text__top .text-md{
+    max-width: 170px;
+    line-height: normal;
+}
+.brand__updated{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: normal;
+    color: #000;
+}
+.brand-block__logo{
+    display: flex;
+    justify-content: center;
+    padding: 0 8.3%;
+    position: relative;
+    margin-bottom: 90px;
+}
+.brand-logo{
+    display: block;
+    text-decoration: none;
+    width: 380px;
+}
+.brand-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.brand-logo__text{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 8.3%;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.61;
+    color: #000;
+    text-decoration: none;
+}
+.btn-red{
+    text-decoration: none;
+}
+.content_brand .btn-red{
+    max-width: 606px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.content_brand .slider-product{
+    margin-bottom: 50px;
+}
+
+.collections{
+    padding: 45px 43px 50px;
+    background: #fff;
+    margin-bottom: 78px;
+}
+.collections .title-main{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.collections-card__block{
+    display: flex;
+    flex-flow: row wrap;
+}
+.collections-card{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% / 4 - 20px);
+    margin-bottom: 50px;
+    margin-right: 26px;
+    text-decoration: none;
+}
+.collections-card:nth-child(-n+4){
+    display: flex;
+}
+
+.collections-card:nth-child(4n){
+    margin-right: 0;
+}
+.collections-card__img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 274px;
+}
+.collections-card__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.collections-card__name{
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+    color: #000;  
+    margin-bottom: 30px;
+}
+.collections-card__shows{
+    width: max-content;
+    margin: 0 auto;
+}
+.collections-slider{
+    width: 100%;
+    padding: 0 8.3%;
+    position: relative;
+    margin-bottom: 146px;
+}
+.collections-slider__arrow_mobile{
+    display: none;
+}
+.collections-slider__box{
+    display: flex !important;
+    margin: 0 1px;
+}
+.collections-slider__track .slick-list{
+    padding-top: 0;
+}
+.collections-slider__img{
+    width: 41.641vw;
+    min-width: 41.641vw;
+    max-width: 641px;
+}
+.collections-slider__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.collections-slider__content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 85px 40px 40px 7.422vw;
+}
+.collections-slider__title{
+    display: block;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.25;
+    color: #cc0328;
+    max-width: 350px;
+    margin-bottom: 30px;
+}
+.collections-slider__text{
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #000;
+    max-width: 350px;
+    padding-right: 20px;
+}
+.collections-slider__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 10px;
+    z-index: 1;
+}
+.collections-slider__arrow_prev{
+    left: 4%;
+}
+.collections-slider__arrow_next{
+    right: 4%;
+}
+.collections-video{
+    display: flex;
+    max-width: 1280px;
+    width: 83.359vw;
+    margin: 0 auto;
+    position: relative;
+}
+.collections-video__logo{
+    position: absolute;
+    top: 48%;
+    transform: translate(0, -50%);
+    right: 14.141vw;
+}
+.collections-video__logo{
+    width: 250px;
+}
+.collections-video__logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.collections-video img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.content_brand .slider-horizontal_brand{
+    padding-left: 8.3%;
+    padding-right: 8.3%;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    margin-bottom: 138px;
+}
+.content_brand .slider-horizontal__track{
+    max-width: 100%;
+}
+.content_brand .slider-horizontal__arrow {
+    padding: 10px;
+}
+.content_brand  .slider-horizontal__arrow_prev {
+    left: 4%;
+}
+.content_brand  .slider-horizontal__arrow_next {
+    right: 4%;
+}

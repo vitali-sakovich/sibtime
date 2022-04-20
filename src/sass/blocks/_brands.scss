@@ -1,0 +1,140 @@
+.content_brands{
+    padding: 7px 8.3% 83px;
+    position: relative;
+}
+.brands-sort{
+    display: flex;
+    position: absolute;
+    top: -56px;
+    left: calc(8.5% + 209px);
+    background: #fff;
+    border-radius: 31px;
+    background-color: #e7e8f0;
+    width: max-content;
+    padding: 4px 5px;
+}
+.brands-sort__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 22px;
+    border-radius: 31px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: normal;
+    color: #000;
+    background: none;
+    transition: background-color none;
+}
+.brands-sort__btn:hover{
+    background-color: #f1f1f1;
+    transition: background-color none;
+}
+.brands-sort__btn:active{
+    background-color: #fff;
+}
+.brands-sort__btn.active{
+    background-color: #fff;
+    cursor: default;
+}
+.brands-sort__btn.active:hover{
+    background-color: #fff;
+}
+.content_brands .slider-horizontal_catalog{
+    margin-bottom: 22px;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+}
+.content_brands .slider-horizontal__arrow_next{
+    right: -50px;
+}
+.content_brands .slider-horizontal__arrow_prev{
+    left: -50px;
+}
+.content_brands .slider-horizontal_catalog .slider-horizontal__track{
+    max-width: 100%;
+    width: 100%;
+}
+.content_brands .shop-brands__img:nth-child(6) {
+    margin-bottom: 0;
+}
+.sort-letters{
+    display: flex;
+    flex-flow: row wrap;
+    background: #fff;
+    margin-top: 22px;
+    padding: 30px 30px 10px;
+    margin-bottom: 43px;
+}
+.sort-letter{
+    display: flex;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    color: #000;
+    padding: 5px;
+    margin: 0 4px;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.sort-letter:hover{
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+.brands__row{
+    display: flex;
+
+}
+.brand__name img{
+    display: none;
+}
+.brands{
+    display: flex;
+    flex-direction: column;
+    padding-left: 26px;
+    position: relative;
+}
+.brands__block{
+    display: block;
+    columns: 3;
+    width: 80%;
+}
+.brands__letter{
+    position: absolute;
+    top: 3px;
+    left: 0;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: normal;
+    color: #8b8b8b;
+}
+.brand__name{
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 15px;
+    min-height: 19.5px;
+}
+.brand__name:hover{
+    font-weight: bold;
+}
+.brands-logo{
+    position: sticky;
+    top: 150px;
+    margin-top: 100px;
+    width: 160px;
+}
+.brands-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

@@ -1,0 +1,66 @@
+<div class="modal modal-fitting">
+  <div class="fitting-desktop">
+    <div class="fitting-desktop__header">
+      <h3 class="title_modal">Онлайн-примерка</h3>
+      <div class="close-modal">
+        <img src="../img/close-modal.svg" alt="" />
+      </div>
+    </div>
+    <div class="modal-text">
+      Откройте сайт на мобильном телефоне, чтобы воспользоваться этой функцией
+    </div>
+    <div class="fitting-desktop__img">
+      <img src="../img/fitting-desktop.jpg" alt="" />
+    </div>
+  </div>
+  <div class="fitting-mobile">
+    <div class="fitting-mobile__inner">
+      <div class="fitting-mobile__header">
+        <h3 class="title_modal">Онлайн-примерка</h3>
+        <div class="close-modal">
+          <img src="../img/close-modal.svg" alt="" />
+        </div>
+      </div>
+      <div class="modal-text">
+        Приложите телефон к запястью, сопоставьте со своей рукой и настройте
+        масштаб ползунком
+      </div>
+    </div>
+    <div class="fitting-range">
+      <input
+        type="range"
+        min="0"
+        max="500"
+        step="1"
+        name="range"
+        class="range-input"
+      />
+    </div>
+    <div class="fitting-img">
+      <img src="../img/watch-fitting.jpg" alt="" />
+    </div>
+  </div>
+  <div class="fitting-horizontal">
+    <div class="fitting-horizontal__inner">
+      <div class="fitting-horizontal__header">
+        <h3 class="title_modal">Онлайн-примерка</h3>
+        <div class="close-modal">
+          <img src="../img/close-modal.svg" alt="" />
+        </div>
+      </div>
+      <div class="modal-text">Поверните телефон вертикально</div>
+    </div>
+    <div class="fitting-horizontal__img">
+      <img src="../img/fitting-horizontal.svg" alt="" />
+    </div>
+  </div>
+  <div class="overlay"></div>
+</div>
+
+<!-- Кнопка вызова модалки  -->
+<div class="fitting-btn js-open-modal" data-open-modal=".modal-fitting">
+  <span class="fitting-btn__text"> Онлайн примерка </span>
+  <div class="fitting-btn__img">
+    <img src="../img/fitting-btn-img.webp" alt="" />
+  </div>
+</div>

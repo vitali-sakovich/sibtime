@@ -1,0 +1,2140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Служба поддержки Сибтайм</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="../img/favic.png">
+    <link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/nice-select.css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-center">
+            <div class="header-center__left">
+                <div class="header__left-row">
+                    <div class="header-btn__inner">
+                        <div class="header-city__btn">
+                            Красноярск
+                            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 12 6">
+                                <g fill="none" fill-rule="evenodd">
+                                    <g fill="#000">
+                                        <g>
+                                            <g>
+                                                <path d="M129 18L134 23 139 18 140 18 134 24 128 18z" transform="translate(-511 -94) translate(214 34) translate(169 42)">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="header__store-address-btn js-shops-btn">
+                            Адреса магазинов
+                        </div>
+                    </div>
+                    <a href="tel:88005519092" class="header__phone">
+                        <span>8 (800) 551-90-92</span>
+                        <img src="../img/phone-mobile.svg" alt="">
+                    </a>
+                </div>
+                <div class="search__btn">
+                    <img src="../img/search.svg" alt="">
+                    <span>Поиск</span>
+                </div>
+            </div>
+            <a href="#" class="logo-header">
+                <img src="../img/logo-bg.svg" alt="" class="logo__bg">
+                <img src="../img/logo-header.svg" alt="" class="logo__img">
+            </a>
+            <div class="header-center__right">
+                <div class="header__right-row">
+                    <a href="#" class="header-center__link header-center__sale">
+                        Акции
+                    </a>
+                    <a href="#" class="header-center__link">
+                        Сервисный центр
+                    </a>
+                </div>
+                <div class="header-right__nav">
+                    <a href="#" class="header-right__nav-item js-lk-btn">
+                        <img src="../img/lk.svg" alt="">
+                        <div class="prompt">
+                            Войти
+                        </div>
+                    </a>
+                    <a href="#" class="header-right__nav-item header-btn__compare">
+                        <img src="../img/install.svg" alt="">
+                        <div class="number-count">
+                            99
+                        </div>
+                        <div class="prompt">
+                            Сравнить
+                        </div>
+                    </a>
+                    <a href="#" class="header-right__nav-item header-btn__favorites">
+                        <img src="../img/star.svg" alt="">
+                        <div class="number-count">
+                            99
+                        </div>
+                        <div class="prompt">
+                            Избранное
+                        </div>
+                    </a>
+                    <div class="header-right__nav-item basket-btn">
+                        <img src="../img/basket.svg" alt="">
+                        <div class="number-count">
+                            99
+                        </div>
+                        <div class="prompt">
+                            Корзина
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-menu__mobile">
+                    <img src="../img/btn-menu-mobile.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="menu-catalog">
+                <div class="menu-catalog__item">
+                    Новинки
+                </div>
+                <div class="menu-catalog__item dropdown-btn">
+                    <span> Бренды</span>
+                    <div class="dropdown-catalog dropdown-catalog_brands">
+                        <div class="dropdown-catalog__wrapper">
+                            <div class="dropdown-catalog__brands-types">
+                                <div class="dropdown-catalog__brands-type active">
+                                    Все бренды
+                                </div>
+                                <div class="dropdown-catalog__brands-type">
+                                    Fashion
+                                </div>
+                                <div class="dropdown-catalog__brands-type">
+                                    Middle
+                                </div>
+                                <div class="dropdown-catalog__brands-type">
+                                    Premium
+                                </div>
+                                <div class="dropdown-catalog__brands-type">
+                                    Luxe
+                                </div>
+                            </div>
+                            <div class="dropdown-catalog__brands-container">
+                                <div class="dropdown-catalog__brands-box">
+                                    <div class="dropdown-catalog__brands-letter">
+                                        А
+                                    </div>
+                                    <a href="#" class="dropdown-catalog__brands-name hidden active">
+                                        Armani Exchange
+                                        <div class="dropdown-catalog__brands-img">
+                                            <img src="../img/ax.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-catalog__brands-name hidden">
+                                        Aviator
+                                        <div class="dropdown-catalog__brands-img">
+                                            <img src="../img/aviator-logo.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropdown-catalog__brands-box">
+                                    <div class="dropdown-catalog__brands-letter">
+                                        С
+                                    </div>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Calvin Klein
+                                    </a>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Casio
+                                    </a>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Certina
+                                    </a>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Certina promo
+                                    </a>
+                                </div>
+                                <div class="dropdown-catalog__brands-box">
+                                    <div class="dropdown-catalog__brands-letter">
+                                        F
+                                    </div>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Fossil
+                                    </a>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Frederique Constant
+                                    </a>
+                                </div>
+                                <div class="dropdown-catalog__brands-box">
+                                    <div class="dropdown-catalog__brands-letter">
+                                        G
+                                    </div>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        G-shock
+                                    </a>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Guess
+                                    </a>
+                                </div>
+                                <div class="dropdown-catalog__brands-box">
+                                    <div class="dropdown-catalog__brands-letter">
+                                        H
+                                    </div>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Hamilton
+                                    </a>
+                                </div>
+                                <div class="dropdown-catalog__brands-box">
+                                    <div class="dropdown-catalog__brands-letter">
+                                        L
+                                    </div>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Longines
+                                    </a>
+                                </div>
+                                <div class="dropdown-catalog__brands-box">
+                                    <div class="dropdown-catalog__brands-letter">
+                                        M
+                                    </div>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Maurice lacroix
+                                    </a>
+                                </div>
+                                <div class="dropdown-catalog__brands-box">
+                                    <div class="dropdown-catalog__brands-letter">
+                                        O
+                                    </div>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Orient
+                                    </a>
+                                </div>
+                                <div class="dropdown-catalog__brands-box">
+                                    <div class="dropdown-catalog__brands-letter">
+                                        R
+                                    </div>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Rado
+                                    </a>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Romanson
+                                    </a>
+                                </div>
+                                <div class="dropdown-catalog__brands-box">
+                                    <div class="dropdown-catalog__brands-letter">
+                                        S
+                                    </div>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Swarovski
+                                    </a>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Swatch
+                                    </a>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Swiss military hanowa
+                                    </a>
+                                </div>
+                                <div class="dropdown-catalog__brands-box">
+                                    <div class="dropdown-catalog__brands-letter">
+                                        T
+                                    </div>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Tissot
+                                    </a>
+                                </div>
+                                <div class="dropdown-catalog__brands-box">
+                                    <div class="dropdown-catalog__brands-letter">
+                                        В
+                                    </div>
+                                    <a href="#" class="dropdown-catalog__brands-name">
+                                        Восток
+                                    </a>
+                                    <div class="dropdown-catalog__brands-img">
+                                        <img src="../img/ax.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-catalog__item dropdown-btn">
+                    <span>часы</span>
+                    <div class="dropdown-catalog dropdown-catalog_wrist">
+                        <div class="dropdown-catalog__wrapper">
+                            <div class="dropdown-catalog__list">
+                                <div class="dropdown-catalog__list-name"></div>
+                                <a href="#" class="dropdown-catalog__link">
+                                    <div class="dropdown-catalog__icon">
+                                        <img src="../img/wrist-all.svg" alt="">
+                                    </div>
+                                    <span>Все наручные часы</span>
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    <div class="dropdown-catalog__icon">
+                                        <img src="../img/wrist-mans.svg" alt="">
+                                    </div>
+                                    <span>Мужские часы</span>
+                                    <div class="dropdown-catalog__img">
+                                        <img src="../img/mans.jpg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    <div class="dropdown-catalog__icon">
+                                        <img src="../img/wrist-womens.svg" alt="">
+                                    </div>
+                                    <span>Женские часы</span>
+                                    <div class="dropdown-catalog__img">
+                                        <img src="../img/mans.jpg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    <div class="dropdown-catalog__icon">
+                                        <img src="../img/wrist-unisex.svg" alt="">
+                                    </div>
+                                    <span>Унисекс</span>
+                                </a>
+                                <a href="#" class="dropdown-catalog__link color">
+                                    <div class="dropdown-catalog__icon">
+                                        <img src="../img/wrist-outlet.svg" alt="">
+                                    </div>
+                                    <span>Outlet</span>
+                                </a>
+                            </div>
+                            <div class="dropdown-catalog__list land">
+                                <div class="dropdown-catalog__list-name">
+                                    Страна
+                                </div>
+                                <a href="#" class="dropdown-catalog__link">
+                                    <div class="dropdown-catalog__icon">
+                                        <img src="../img/clock-switzerland.webp" alt="">
+                                    </div>
+                                    <span>Швейцарские</span>
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    <div class="dropdown-catalog__icon">
+                                        <img src="../img/clock-japan.webp" alt="">
+                                    </div>
+                                    <span>Японские</span>
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    <div class="dropdown-catalog__icon">
+                                        <img src="../img/clock-rus.webp" alt="">
+                                    </div>
+                                    <span>Российские</span>
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    <div class="dropdown-catalog__icon">
+                                        <img src="../img/clock-usa.webp" alt="">
+                                    </div>
+                                    <span>Американские</span>
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    <div class="dropdown-catalog__icon">
+                                        <img src="../img/clock-eng.webp" alt="">
+                                    </div>
+                                    <span>Английские</span>
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    <div class="dropdown-catalog__icon">
+                                        <img src="../img/clock-deutschland.webp" alt="">
+                                    </div>
+                                    <span>Немецкие</span>
+                                </a>
+                            </div>
+                            <div class="dropdown-catalog__list dropdown-catalog__list_brands">
+                                <div class="dropdown-catalog__list-name">
+                                    Популярные бренды
+                                </div>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Casio
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Earnshaw
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Bulova
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Swiss military
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Fossil
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Orient
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Obaku
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Rosefield
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Diesel
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Michael Kors
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Seiko
+                                </a>
+                            </div>
+                            <div class="dropdown-catalog__list">
+                                <div class="dropdown-catalog__list-name">
+                                    Стиль
+                                </div>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Классика
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Fashion
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Casual
+                                </a>
+                                <div class="dropdown-catalog__list-name">
+                                    Корпус
+                                </div>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Золотые
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Серебряные
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Титановые
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Сталь
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Керамика
+                                </a>
+                            </div>
+                            <div class="dropdown-catalog__list">
+                                <div class="dropdown-catalog__list-name">
+                                    Популярные
+                                </div>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Скелетоны
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Умные часы
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Детские часы
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Спортивные
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Для туризма
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    Электронные
+                                </a>
+                                <a href="#" class="dropdown-catalog__link">
+                                    С хронографом
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-catalog__item">
+                    Подарки и аксессуары
+                </div>
+                <div class="menu-catalog__item">
+                    Очки
+                </div>
+                <div class="menu-catalog__item menu-catalog__item_color">
+                    Sale
+                </div>
+            </div>
+        </div>
+        <div class="stylist">
+            <div class="stylist__btn">
+                <div class="stylist__btn-img">
+                    <img src="../img/stylist.webp" alt="">
+                </div>
+                <div class="stylist__btn-text">
+                    Стилист
+                </div>
+            </div>
+            <div class="stylist-block">
+                <div class="stylist-title">
+                    Онлайн стилист
+                </div>
+                <div class="stylist-text">
+                    Хотите подобрать самостоятельно свою идеальную модель?
+                </div>
+                <div class="stylist-text">
+                    Персонализированный подбор предложит варианты, которые будут подходить именно вам.
+                </div>
+                <a href="#" class="btn-border">
+                    Начать подбор
+                </a>
+            </div>
+            <div class="stylist-overlay"></div>
+        </div>
+        <div class="menu-mobile">
+            <div class="menu-mobile__header">
+                <div class="menu-mobile__col">
+                    <a href="#" class="menu-mobile__lk js-lk-btn">
+                        Личный кабинет
+                    </a>
+                    <a href="tel: 88005519092" class="menu-mobile__tel">
+                        8 (800) 551-90-92
+                    </a>
+                    <div class="header-city__btn">
+                        Красноярск
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 12 6">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#000">
+                                    <g>
+                                        <g>
+                                            <path d="M129 18L134 23 139 18 140 18 134 24 128 18z" transform="translate(-511 -94) translate(214 34) translate(169 42)">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="menu-mobile__col">
+                    <div class="menu-mobile__close">
+                        <img src="../img/close-menu-mobile.svg" alt="">
+                    </div>
+                    <div class="menu-mobile__store-btn js-shops-btn">
+                        Адреса магазинов
+                    </div>
+                </div>
+            </div>
+            <div class="menu-mobile__list">
+                <a href="#" class="menu-mobile__link menu-mobile__link_uppercase">
+                    Новинки
+                </a>
+                <a href="#" class="menu-mobile__link menu-mobile__link_uppercase">
+                    Бренды
+                </a>
+                <a href="#" class="menu-mobile__link menu-mobile__link_uppercase">
+                    Часы
+                </a>
+                <a href="#" class="menu-mobile__link menu-mobile__link_uppercase">
+                    Подарки и аксессуары
+                </a>
+                <a href="#" class="menu-mobile__link menu-mobile__link_uppercase">
+                    Очки
+                </a>
+                <a href="#" class="menu-mobile__link menu-mobile__link_uppercase color">
+                    Sale
+                </a>
+                <a href="#" class="menu-mobile__link color">
+                    Акции
+                </a>
+                <a href="#" class="menu-mobile__link">
+                    О нас
+                </a>
+                <a href="#" class="menu-mobile__link">
+                    Салоны
+                </a>
+                <a href="#" class="menu-mobile__link">
+                    Вакансии
+                </a>
+                <a href="#" class="menu-mobile__link">
+                    Новости
+                </a>
+                <a href="#" class="menu-mobile__link">
+                    Статьи
+                </a>
+                <a href="#" class="menu-mobile__link">
+                    Доставка и оплата
+                </a>
+                <a href="#" class="menu-mobile__link">
+                    Обмен и возврат
+                </a>
+                <a href="#" class="menu-mobile__link">
+                    Гарантии
+                </a>
+                <a href="#" class="menu-mobile__link">
+                    Политика
+                </a>
+                <a href="#" class="menu-mobile__link">
+                    Онлайн-стилист
+                </a>
+                <a href="#" class="menu-mobile__link">
+                    Подарочные карты
+                </a>
+                <a href="#" class="menu-mobile__link">
+                    Корпоративные продажи
+                </a>
+                <a href="#" class="menu-mobile__link">
+                    Бонусная система
+                </a>
+                <a href="#" class="menu-mobile__link">
+                    Сервисный центр
+                </a>
+                <a href="#" class="menu-mobile__link">
+                    Служба поддержки
+                </a>
+                <a href="#" class="menu-mobile__link">
+                    FAQ
+                </a>
+            </div>
+        </div>
+        <div class="modal modal-search">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Поиск по товарам</h3>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-search__content">
+                    <form action="/search/" method="get" class="search-form">
+                        <label class="label">
+                            <input type="text" name="search" placeholder="Введите название товара" required class="input">
+                            <div class="search-icon">
+                                <img src="../img/search.svg" alt="">
+                            </div>
+                        </label>
+                        <button class="btn-border">
+                            Найти
+                        </button>
+                    </form>
+                    <div class="autocomplete-search">
+                        <a href="#" class="autocomplete-search__item">
+                            <div class="autocomplete-search__img">
+                                <img src="../img/clock1.png" alt="">
+                            </div>
+                            <div class="autocomplete-search__box">
+                                <div class="autocomplete-search__name">
+                                    RADO True R27108312
+                                </div>
+                                <div class="autocomplete-search__price-box">
+                                    <div class="autocomplete-search__price">
+                                        160`200 Р
+                                    </div>
+                                    <div class="autocomplete-search__old">
+                                        190`200 Р
+                                    </div>
+                                    <div class="autocomplete-search__sale">
+                                        10%
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="autocomplete-search__item">
+                            <div class="autocomplete-search__img">
+                                <img src="../img/clock1.png" alt="">
+                            </div>
+                            <div class="autocomplete-search__box">
+                                <div class="autocomplete-search__name">
+                                    RADO True R27108312
+                                </div>
+                                <div class="autocomplete-search__price-box">
+                                    <div class="autocomplete-search__price">
+                                        160`200 Р
+                                    </div>
+                                    <div class="autocomplete-search__old">
+                                        190`200 Р
+                                    </div>
+                                    <div class="autocomplete-search__sale">
+                                        10%
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="autocomplete-search__item">
+                            <div class="autocomplete-search__img">
+                                <img src="../img/clock2.png" alt="">
+                            </div>
+                            <div class="autocomplete-search__box">
+                                <div class="autocomplete-search__name">
+                                    RADO Ceramica R27108312
+                                </div>
+                                <div class="autocomplete-search__price-box">
+                                    <div class="autocomplete-search__price">
+                                        160`200 Р
+                                    </div>
+                                    <div class="autocomplete-search__old">
+                                        190`200 Р
+                                    </div>
+                                    <div class="autocomplete-search__sale">
+                                        10%
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="autocomplete-search__item">
+                            <div class="autocomplete-search__img">
+                                <img src="../img/clock3.png" alt="">
+                            </div>
+                            <div class="autocomplete-search__box">
+                                <div class="autocomplete-search__name">
+                                    RADO KHAKI NAVY R27108312
+                                </div>
+                                <div class="autocomplete-search__price-box">
+                                    <div class="autocomplete-search__price">
+                                        160`200 Р
+                                    </div>
+                                    <div class="autocomplete-search__old">
+                                        190`200 Р
+                                    </div>
+                                    <div class="autocomplete-search__sale">
+                                        10%
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="autocomplete-search__item">
+                            <div class="autocomplete-search__img">
+                                <img src="../img/clock4.png" alt="">
+                            </div>
+                            <div class="autocomplete-search__box">
+                                <div class="autocomplete-search__name">
+                                    RADO Ventura R27108312
+                                </div>
+                                <div class="autocomplete-search__price-box">
+                                    <div class="autocomplete-search__price">
+                                        160`200 Р
+                                    </div>
+                                    <div class="autocomplete-search__old">
+                                        190`200 Р
+                                    </div>
+                                    <div class="autocomplete-search__sale">
+                                        10%
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="autocomplete-search__item">
+                            <div class="autocomplete-search__img">
+                                <img src="../img/clock5.png" alt="">
+                            </div>
+                            <div class="autocomplete-search__box">
+                                <div class="autocomplete-search__name">
+                                    RADO True R27108312
+                                </div>
+                                <div class="autocomplete-search__price-box">
+                                    <div class="autocomplete-search__price">
+                                        160`200 Р
+                                    </div>
+                                    <div class="autocomplete-search__old">
+                                        190`200 Р
+                                    </div>
+                                    <div class="autocomplete-search__sale">
+                                        10%
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-shops">
+            <div class="modal-shops__block">
+                <div class="modal-shops__content">
+                    <div class="modal-shops__title">
+                        Адреса салонов
+                    </div>
+                    <div class="modal-shops__list scroll">
+                        <div class="modal-shop">
+                            <a href="#" class="modal-shop__name">
+                                Алексеева, 34
+                            </a>
+                            <div class="modal-shop__address">
+                                Слобода Весны, Советский район, Красноярск
+                            </div>
+                            <a href="tel:+73912729009" class="modal-shop__phone">
+                                +7 (391) 272‒90‒09
+                            </a>
+                            <div class="modal-shop__time">
+                                Ежедневно с 10:00 до 20:00
+                            </div>
+                        </div>
+                        <div class="modal-shop active">
+                            <a href="#" class="modal-shop__name">
+                                Институт искусств
+                            </a>
+                            <div class="modal-shop__address">
+                                ​Мира проспект, 98, ​1 этаж
+                                ​ Центральный район, Красноярск
+                            </div>
+                            <a href="tel:+73912729009" class="modal-shop__phone">
+                                +7 (391) 272‒90‒09
+                            </a>
+                            <div class="modal-shop__time">
+                                Ежедневно с 10:00 до 20:00
+                            </div>
+                        </div>
+                        <div class="modal-shop">
+                            <a href="#" class="modal-shop__name">
+                                На Свободном
+                            </a>
+                            <div class="modal-shop__address">
+                                ​Телевизорная, 1 ст4, ​1 этаж
+                                Октябрьский район, Красноярск
+                            </div>
+                            <a href="tel:+73912729009" class="modal-shop__phone">
+                                +7 (391) 272‒90‒09
+                            </a>
+                            <div class="modal-shop__time">
+                                Ежедневно с 10:00 до 20:00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-shops__map" id="shops-modal-map"></div>
+                <script type="text/javascript">
+                    var map;
+                    var locations = [
+                        { "name": "​Мира проспект, 98, ​1 этаж​ Центральный район, Красноярск", "lat": "56.01175713176359", "lng": "92.86015456974415", "is_exact": true },
+                        { "name": "Слобода Весны, Советский район, Красноярск", "lat": "56.04729206268887", "lng": "92.89417122406721", "is_exact": false },
+                        { "name": "​Телевизорная, 1 ст4, ​1 этаж Октябрьский район, Красноярск", "lat": "56.02223991337093", "lng": "92.79738894276429", "is_exact": false },
+                    ];
+                    function drawMap() {
+
+                        var myOptions = {
+                            zoom: 12,
+                            center: new google.maps.LatLng(56.0306262494447, 92.83863011963696),
+                            mapTypeId: google.maps.MapTypeId.ROADMAP,
+                            mapTypeControl: false,
+                            fullscreenControl: false,
+                            disableDefaultUI: true,
+                            zoomControl: true,
+                            scrollwheel: false,
+                        }
+                        map = new google.maps.Map(document.getElementById("shops-modal-map"), myOptions);
+
+                        setMarkers(locations);
+
+                    }
+                    function setMarkers(locations) {
+                        for (i = 0; i < locations.length; i++) {
+                            var location = locations[i];
+                            var nameMarker = location.name;
+                            plotMarker(location, nameMarker);
+                        }
+                    }
+
+                    function plotMarker(location, nameMarker) {
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(location.lat, location.lng),
+                            icon: {
+                                url: "../img/marker.svg",
+                                scaledSize: new google.maps.Size(43, 57)
+                            },
+                            map: map,
+                        });
+                        attachSecretMessage(marker, nameMarker);
+                    }
+                    function attachSecretMessage(marker, secretMessage) {
+                        const infowindow = new google.maps.InfoWindow({
+                            content: secretMessage,
+                        });
+                        marker.addListener("mouseover", () => {
+                            infowindow.open(marker.get("map"), marker);
+                        });
+                        marker.addListener("mouseout", () => {
+                            infowindow.close(marker.get("map"), marker);
+                        });
+
+                    }
+                </script>
+                <div class="modal-shops__close">
+                    <img src="../img/close-modal.svg" alt="">
+                </div>
+            </div>
+            <div class="overflow-shops"></div>
+        </div>
+        <!-- когда кoрзина пустая добавить класс basket-not -->
+        <div class="modal basket">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Корзина</h3>
+                    <div class="basket-header__text">
+                        Помощь в покупке
+                        8 (800) 551-90-92
+                    </div>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="basket-content">
+                    <div class="basket-card__list">
+                        <div class="basket-card">
+                            <div class="basket-card__img">
+                                <img src="../img/clock1.png" alt="">
+                            </div>
+                            <div class="basket-card__content">
+                                <a href="#" class="basket-card__name">
+                                    RADO True R27108312
+                                </a>
+                                <div class="basket-card__price-box">
+                                    <span class="basket-card__price">
+                                        160` 200 Р
+                                    </span>
+                                    <span class="basket-card__price-old">
+                                        190` 200 Р
+                                    </span>
+                                    <span class="basket-card__price-discount">
+                                        10%
+                                    </span>
+                                </div>
+                                <div class="counter-wrapper">
+                                    <div class="counter">
+                                        <div class="counter__minus">
+                                            <img src="../img/minus.svg" alt="minus">
+                                        </div>
+                                        <input type="number" name="QUANTITY" value="1" min="1" step="1" class="counter__number">
+                                        <div class="counter__plus">
+                                            <img src="../img/plus.svg" alt="plus">
+                                        </div>
+                                    </div>
+                                    <div class="price-counter">
+                                        = 2000 Р
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket-card__btn-box">
+                                <div class="basket-card__btn">
+                                    <img src="../img/delete.svg" alt="">
+                                </div>
+                                <div class="basket-card__btn">
+                                    <img src="../img/star-basked.svg" alt="">
+                                </div>
+                                <div class="basket-card__btn">
+                                    <img src="../img/compare.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-card">
+                            <div class="basket-card__img">
+                                <img src="../img/clock2.png" alt="">
+                            </div>
+                            <div class="basket-card__content">
+                                <a href="#" class="basket-card__name">
+                                    RADO True R27108312
+                                </a>
+                                <div class="basket-card__price-box">
+                                    <span class="basket-card__price">
+                                        160` 200 Р
+                                    </span>
+                                    <span class="basket-card__price-old">
+                                        190` 200 Р
+                                    </span>
+                                    <span class="basket-card__price-discount">
+                                        10%
+                                    </span>
+                                </div>
+                                <div class="counter-wrapper">
+                                    <div class="counter">
+                                        <div class="counter__minus">
+                                            <img src="../img/minus.svg" alt="minus">
+                                        </div>
+                                        <input type="number" name="QUANTITY" value="1" min="1" step="1" class="counter__number">
+                                        <div class="counter__plus">
+                                            <img src="../img/plus.svg" alt="plus">
+                                        </div>
+                                    </div>
+                                    <div class="price-counter">
+                                        = 2000 Р
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket-card__btn-box">
+                                <div class="basket-card__btn">
+                                    <img src="../img/delete.svg" alt="">
+                                </div>
+                                <div class="basket-card__btn">
+                                    <img src="../img/star-basked.svg" alt="">
+                                </div>
+                                <div class="basket-card__btn">
+                                    <img src="../img/compare.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-card">
+                            <div class="basket-card__img">
+                                <img src="../img/clock2.png" alt="">
+                            </div>
+                            <div class="basket-card__content">
+                                <a href="#" class="basket-card__name">
+                                    RADO True R27108312
+                                </a>
+                                <div class="basket-card__price-box">
+                                    <span class="basket-card__price">
+                                        160` 200 Р
+                                    </span>
+                                    <span class="basket-card__price-old">
+                                        190` 200 Р
+                                    </span>
+                                    <span class="basket-card__price-discount">
+                                        10%
+                                    </span>
+                                </div>
+                                <div class="counter-wrapper">
+                                    <div class="counter">
+                                        <div class="counter__minus">
+                                            <img src="../img/minus.svg" alt="minus">
+                                        </div>
+                                        <input type="number" name="QUANTITY" value="1" min="1" step="1" class="counter__number">
+                                        <div class="counter__plus">
+                                            <img src="../img/plus.svg" alt="plus">
+                                        </div>
+                                    </div>
+                                    <div class="price-counter">
+                                        = 2000 Р
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket-card__btn-box">
+                                <div class="basket-card__btn">
+                                    <img src="../img/delete.svg" alt="">
+                                </div>
+                                <div class="basket-card__btn">
+                                    <img src="../img/star-basked.svg" alt="">
+                                </div>
+                                <div class="basket-card__btn">
+                                    <img src="../img/compare.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-ordering">
+                        <div class="basket-price__box">
+                            <div class="basket-price__name">
+                                Стоимость
+                            </div>
+                            <div class="basket-price">
+                                160`200 Р
+                            </div>
+                        </div>
+                        <div class="basket-price__box">
+                            <div class="basket-price__name">
+                                Скидка
+                            </div>
+                            <div class="basket-price">
+                                -200 Р
+                            </div>
+                        </div>
+                        <div class="basket-ordering__text">
+                            Доступные способы и стоимость доставки можно выбрать при
+                            оформлении заказа
+                        </div>
+                        <div class="basket-price__box">
+                            <div class="basket-price__name">
+                                Итого
+                            </div>
+                            <div class="basket-price basket-price__total">
+                                160`000 Р
+                            </div>
+                        </div>
+                        <div class="basket-ordering__promo">
+                            <label class="label">
+                                <input type="text" name="promo-code" placeholder="Промокод" class="input">
+                                <div class="promo-btn">
+                                    <img src="../img/promo-code-input-btn.svg" alt="">
+                                </div>
+                                <div class="promo-yes">
+                                    <img src="../img/promo-code-input.svg" alt="">
+                                </div>
+                            </label>
+                        </div>
+                        <button class="btn-red">
+                            Оформить заказ
+                        </button>
+                    </div>
+                    <div class="basket-not__block">
+                        <img src="../img/basket-none.svg" alt="" class="basket-not__img">
+                        <div class="basket-not__text">
+                            Здесь пока ничего нет
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Модалка Заказать звонок -->
+        <div class="modal phone-modal">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Заказать звонок</h3>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <div class="modal-text">
+                        Введите номер телефона и наш менеджер свяжется с вами для уточнения деталей
+                    </div>
+                    <form data-parsley-validate="" method="post" action="#" class="form">
+                        <label class="label first-elem">
+                            <input type="text" required="" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите ваше имя" class="input">
+                            <span class="placeholder-input">Ваше имя *</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label">
+                            <input type="text" name="phone" data-parsley-required-message="Введите контактный номер телефона" data-parsley-required="true" required="" data-parsley-trigger="change" class="input phone_validate">
+                            <span class="placeholder-input">Телефон *</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label-textarea">
+                            <textarea name="comment" data-parsley-trigger="change" data-parsley-required-message="Комментарий" class="textarea"></textarea>
+                            <span class="placeholder-input">Комментарий</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <div class="label-row">
+                            <label class="label label_time">
+                                <input type="time" name="time" data-parsley-required-message="Введите время звонка" data-parsley-trigger="change" class="input">
+                                <span class="placeholder-input">Время звонка</span>
+                                <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                            </label>
+                            <label class="label label_date">
+                                <input type="text" name="date" data-parsley-required-message="Введите дату звонка" data-parsley-trigger="change" value="Сегодня" class="input date-calendar">
+                                <span class="placeholder-input">Дата звонка</span>
+                            </label>
+                        </div>
+                        <div class="form-btn__box">
+                            <div class="chek__label">
+                                <label class="check-inner">
+                                    <input type="checkbox" name="ch" data-parsley-required="true" required="" data-parsley-multiple="ch" data-parsley-required-message="Примите согласие на обработку персональных данных" checked="checked" class="check-data">
+                                    <span class="checkbox-data"></span>
+                                </label>
+                                <span class="data-span">Я даю свое
+                                    <span class="data-span__link btn-consent">согласие на обработку персональных
+                                        данных</span>
+                                </span>
+                            </div>
+                            <button class="btn btn-border last-elem" type="submit">
+                                Перезвоните мне
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Модалка Купить в 1 клик -->
+        <div class="modal modal-buy">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Купить в 1 клик</h3>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <div class="modal-text">
+                        Введите номер телефона и наш специалист свяжется с вами для уточнения деталей
+                    </div>
+                    <form data-parsley-validate="" method="post" action="#" class="form">
+                        <label class="label first-elem">
+                            <input type="text" name="phone" data-parsley-required-message="Введите контактный номер телефона" data-parsley-required="true" required="" data-parsley-trigger="change" class="input phone_validate">
+                            <span class="placeholder-input">Телефон</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <div class="form-btn__box">
+                            <div class="chek__label">
+                                <label class="check-inner">
+                                    <input type="checkbox" name="ch" data-parsley-required="true" required="" data-parsley-multiple="ch" data-parsley-required-message="Примите согласие на обработку персональных данных" checked="checked" class="check-data">
+                                    <span class="checkbox-data"></span>
+                                </label>
+                                <span class="data-span">Я даю свое
+                                    <span class="data-span__link btn-consent">согласие на обработку персональных
+                                        данных</span>
+                                </span>
+                            </div>
+                            <button class="btn btn-border last-elem" type="submit">
+                                Отправить
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Модалка Заказать товар -->
+        <div class="modal modal-order-foods">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Заказать товар</h3>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <div class="modal-text">
+                        Данного товара нет в наличии, вы можете оставить свой номер телефона и наш менеджер свяжется с
+                        вами или предложит аналог
+                    </div>
+                    <form data-parsley-validate="" method="post" action="#" class="form">
+                        <label class="label first-elem">
+                            <input type="text" name="phone" data-parsley-required-message="Введите контактный номер телефона" data-parsley-required="true" required="" data-parsley-trigger="change" class="input phone_validate">
+                            <span class="placeholder-input">Телефон</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <div class="form-btn__box">
+                            <div class="chek__label">
+                                <label class="check-inner">
+                                    <input type="checkbox" name="ch" data-parsley-required="true" required="" data-parsley-multiple="ch" data-parsley-required-message="Примите согласие на обработку персональных данных" checked="checked" class="check-data">
+                                    <span class="checkbox-data"></span>
+                                </label>
+                                <span class="data-span">Я даю свое
+                                    <span class="data-span__link btn-consent">согласие на обработку персональных
+                                        данных</span>
+                                </span>
+                            </div>
+                            <button class="btn btn-border last-elem" type="submit">
+                                Отправить
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Модалка Намекнуть о подарке -->
+        <div class="modal modal-hint">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Намекнуть о подарке</h3>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <div class="modal-text">
+                        Хотели бы получить данную модель в подарок?
+                        Намекните об этом своему близкому человеку.
+                    </div>
+                    <form data-parsley-validate="" method="post" action="#" class="form">
+                        <label class="label first-elem">
+                            <input type="text" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите имя кому хотите намекнуть" required class="input">
+                            <span class="placeholder-input">Кому (имя)</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label">
+                            <input type="email" name="email" data-parsley-required-message="Введите e-mail получателя" data-parsley-required="true" data-parsley-trigger="change" required class="input">
+                            <span class="placeholder-input">E-mail получателя</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label">
+                            <input type="text" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите ваше имя" required class="input">
+                            <span class="placeholder-input">Ваше имя</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label">
+                            <input type="email" name="email" data-parsley-required-message="Введите ваш e-mail" data-parsley-required="true" data-parsley-trigger="change" required class="input">
+                            <span class="placeholder-input">Ваш e-mail</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <div class="form-btn__box">
+                            <div class="chek__label">
+                                <label class="check-inner">
+                                    <input type="checkbox" name="ch" data-parsley-required="true" required="" data-parsley-multiple="ch" data-parsley-required-message="Примите согласие на обработку персональных данных" checked="checked" class="check-data">
+                                    <span class="checkbox-data"></span>
+                                </label>
+                                <span class="data-span">Я даю свое
+                                    <span class="data-span__link btn-consent">согласие на обработку персональных
+                                        данных</span>
+                                </span>
+                            </div>
+                            <button class="btn btn-border last-elem" type="submit">
+                                Намекнуть
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Модалка Нашли дешевле? -->
+        <div class="modal modal-found-cheaper">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Нашли дешевле?</h3>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <div class="modal-text">
+                        Если вы нашли данный товар на другом сайте по более выгодной цене, заполните форму ниже, и мы
+                        свяжемся с вами чтобы сделать индивидуальное предложение
+                    </div>
+                    <form data-parsley-validate="" method="post" action="#" class="form">
+                        <label class="label first-elem">
+                            <input type="text" required="" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите ваше имя" class="input">
+                            <span class="placeholder-input">Ваше имя *</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label">
+                            <input type="text" name="phone" data-parsley-required-message="Введите контактный номер телефона" data-parsley-required="true" required="" data-parsley-trigger="change" class="input phone_validate">
+                            <span class="placeholder-input">Телефон *</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label">
+                            <input type="email" name="email" data-parsley-required-message="Введите ваш e-mail" data-parsley-trigger="change" class="input">
+                            <span class="placeholder-input">Ваш e-mail</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label">
+                            <input type="text" name="link" data-parsley-required-message="Введите ссылку на товар по более выгодной цене" data-parsley-required="true" data-parsley-trigger="change" class="input">
+                            <span class="placeholder-input">Ссылка на товар по более выгодной цене</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label-textarea">
+                            <textarea name="comment" data-parsley-trigger="change" data-parsley-required-message="Комментарий" class="textarea"></textarea>
+                            <span class="placeholder-input">Комментарий</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <div class="form-btn__box">
+                            <div class="chek__label">
+                                <label class="check-inner">
+                                    <input type="checkbox" name="ch" data-parsley-required="true" required="" data-parsley-multiple="ch" data-parsley-required-message="Примите согласие на обработку персональных данных" checked="checked" class="check-data">
+                                    <span class="checkbox-data"></span>
+                                </label>
+                                <span class="data-span">Я даю свое
+                                    <span class="data-span__link btn-consent">согласие на обработку персональных
+                                        данных</span>
+                                </span>
+                            </div>
+                            <button class="btn btn-border last-elem" type="submit">
+                                Отправить
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Модалка Авторизация -->
+        <div class="modal modal-authorization">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Авторизация</h3>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <form data-parsley-validate="" method="post" action="#" class="form">
+                        <label class="label first-elem">
+                            <input type="text" name="phone" data-parsley-required-message="Введите номер телефона для автор" data-parsley-required="true" required="" data-parsley-trigger="change" class="input phone_validate">
+                            <span class="placeholder-input">Телефон</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label">
+                            <input type="password" name="password" required="" data-parsley-trigger="change" data-parsley-required-message="Введите пароль" class="input js-password">
+                            <span class="placeholder-input">Пароль</span>
+                            <span class="password-control"><img src="../img/password-icon.svg"></span>
+                        </label>
+                        <div class="form-btn btn-registration">
+                            Забыли пароль?
+                        </div>
+                        <div class="form-btn__box">
+                            <div class="form-btn btn-registration">
+                                Зарегистрироваться
+                            </div>
+                            <button class="btn btn-border last-elem" type="submit">
+                                Авторизоваться
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Модалка Вход или регистрация -->
+        <div class="modal modal-authorization-code">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Вход или регистрация</h3>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <div class="modal-text">
+                        На ваш номер телефона выслан код подтверждения. Пожалуйста, введите его ниже. Вы сможете
+                        использовать этот код в качестве пароля или изменить его на любой другой в личном кабинете.
+                    </div>
+                    <form data-parsley-validate="" method="post" action="#" class="form">
+                        <label class="label first-elem">
+                            <input type="text" name="sms" data-parsley-required-message="Введите пароль из SMS" required="" data-parsley-trigger="change" class="input">
+                            <span class="placeholder-input">Пароль из SMS</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <div class="code-time">
+                            Получить новый код можно через <span class="code-time__number">55</span> секунд
+                        </div>
+                        <div class="form-btn__box">
+                            <div class="form-btn btn-another-number">
+                                Указать другой телефон
+                            </div>
+                            <button class="btn btn-border last-elem" type="submit">
+                                Войти
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Модалка Вопрос по данной модели -->
+        <div class="modal modal-qustion">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Вопрос по данной модели</h3>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <div class="modal-text">
+                        Если у вас появились вопросы по данной модели, заполните форму ниже и наш специалист свяжется с
+                        вами для уточнения деталей
+                    </div>
+                    <form data-parsley-validate="" method="post" action="#" class="form">
+                        <label class="label first-elem">
+                            <input type="text" required="" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите ваше имя" class="input">
+                            <span class="placeholder-input">Ваше имя *</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label">
+                            <input type="text" name="phone" data-parsley-required-message="Введите контактный номер телефона" data-parsley-required="true" required="" data-parsley-trigger="change" class="input phone_validate">
+                            <span class="placeholder-input">Телефон *</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label">
+                            <input type="email" name="email" data-parsley-required-message="Введите ваш e-mail" data-parsley-trigger="change" class="input">
+                            <span class="placeholder-input">E-mail</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label-textarea">
+                            <textarea name="comment" data-parsley-trigger="change" data-parsley-required-message="Комментарий" class="textarea"></textarea>
+                            <span class="placeholder-input">Комментарий</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <div class="form-btn__box">
+                            <div class="chek__label">
+                                <label class="check-inner">
+                                    <input type="checkbox" name="ch" data-parsley-required="true" required="" data-parsley-multiple="ch" data-parsley-required-message="Примите согласие на обработку персональных данных" checked="checked" class="check-data">
+                                    <span class="checkbox-data"></span>
+                                </label>
+                                <span class="data-span">Я даю свое
+                                    <span class="data-span__link btn-consent">согласие на обработку персональных
+                                        данных</span>
+                                </span>
+                            </div>
+                            <button class="btn btn-border last-elem" type="submit">
+                                Отправить
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Модалка Уточнить возможную скидку -->
+        <div class="modal modal-sale">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Уточнить возможную
+                        скидку</h3>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <div class="modal-text">
+                        Оставьте контактные данные, и наш специалист свяжется с вами для уточнения деталей
+                    </div>
+                    <form data-parsley-validate="" method="post" action="#" class="form">
+                        <label class="label first-elem">
+                            <input type="text" required="" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите ваше имя" class="input">
+                            <span class="placeholder-input">Ваше имя *</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label">
+                            <input type="text" name="phone" data-parsley-required-message="Введите контактный номер телефона" data-parsley-required="true" required="" data-parsley-trigger="change" class="input phone_validate">
+                            <span class="placeholder-input">Телефон *</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label">
+                            <input type="email" name="email" data-parsley-required-message="Введите ваш e-mail" data-parsley-trigger="change" class="input">
+                            <span class="placeholder-input">E-mail</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label-textarea">
+                            <textarea name="comment" data-parsley-trigger="change" data-parsley-required-message="Комментарий" class="textarea"></textarea>
+                            <span class="placeholder-input">Комментарий</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <div class="form-btn__box">
+                            <div class="chek__label">
+                                <label class="check-inner">
+                                    <input type="checkbox" name="ch" data-parsley-required="true" required="" data-parsley-multiple="ch" data-parsley-required-message="Примите согласие на обработку персональных данных" checked="checked" class="check-data">
+                                    <span class="checkbox-data"></span>
+                                </label>
+                                <span class="data-span">Я даю свое
+                                    <span class="data-span__link btn-consent">согласие на обработку персональных
+                                        данных</span>
+                                </span>
+                            </div>
+                            <button class="btn btn-border last-elem" type="submit">
+                                Отправить
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Модалка Обратная связь -->
+        <div class="modal modal-feedback">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Обратная связь</h3>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <div class="modal-text">
+                        Отправьте прямое письмо для директора и мы свяжемся с вами для уточнения деталей
+                    </div>
+                    <form data-parsley-validate="" method="post" action="#" class="form">
+                        <label class="label first-elem">
+                            <input type="text" required="" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите ваше имя" class="input">
+                            <span class="placeholder-input">Ваше имя *</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label">
+                            <input type="text" name="phone" data-parsley-required-message="Введите контактный номер телефона" data-parsley-required="true" required="" data-parsley-trigger="change" class="input phone_validate">
+                            <span class="placeholder-input">Телефон *</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label">
+                            <input type="email" name="email" data-parsley-required-message="Введите ваш e-mail" data-parsley-trigger="change" class="input">
+                            <span class="placeholder-input">E-mail</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label-textarea">
+                            <textarea name="comment" data-parsley-trigger="change" data-parsley-required-message="Оставьте комментарий" class="textarea"></textarea>
+                            <span class="placeholder-input">Комментарий</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <div class="form-btn__box">
+                            <div class="chek__label">
+                                <label class="check-inner">
+                                    <input type="checkbox" name="ch" data-parsley-required="true" required="" data-parsley-multiple="ch" data-parsley-required-message="Примите согласие на обработку персональных данных" checked="checked" class="check-data">
+                                    <span class="checkbox-data"></span>
+                                </label>
+                                <span class="data-span">Я даю свое
+                                    <span class="data-span__link btn-consent">согласие на обработку персональных
+                                        данных</span>
+                                </span>
+                            </div>
+                            <button class="btn btn-border last-elem" type="submit">
+                                Отправить
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Модалка Согласие на обработку персональных данных -->
+        <div class="modal consent-modal">
+            <div class="overlay-consent"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">
+                        Согласие на обработку персональных данных
+                    </h3>
+                    <div class="close-modal-consent">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <div class="modal-text">
+                        <p>
+                            Настоящим свободно, своей волей и в своем интересе даю согласие ООО "Сибтайм", которое
+                            находится
+                            по адресу: <a href="https://www.sibtime.ru/">https://www.sibtime.ru/</a> на
+                            автоматизированную и неавтоматизированную обработку
+                            моих
+                            персональных данных, в том числе с использованием интернет - сервисов на сайте
+                            <a href="https://www.sibtime.ru/">https://www.sibtime.ru/</a> в соответствии со следующим
+                            перечнем:
+                        </p>
+                        <ul>
+                            <li>
+                                персональные данные – номер телефона, адрес моей электронной почты, фамилия, имя,
+                                отчество;
+                            </li>
+                            <li>
+                                источник захода на сайт <a href="https://www.sibtime.ru/">https://www.sibtime.ru/</a> и
+                                информация поискового или рекламного
+                                запроса;
+                            </li>
+                            <li>
+                                данные о пользовательском устройстве (среди которых разрешение, версия и другие
+                                атрибуты,
+                                характеризующие пользовательское устройство);
+                            </li>
+                            <li>
+                                пользовательские клики, просмотры страниц, заполнения полей, показы и просмотры баннеров
+                                и
+                                видео;
+                            </li>
+                            <li>
+                                данные, характеризующие аудиторные сегменты;
+                            </li>
+                            <li>
+                                номер телефона, адрес моей электронной почты, фамилия, имя, отчество; параметры сессии;
+                            </li>
+                            <li>
+                                данные о времени посещения;
+                            </li>
+                            <li>
+                                идентификатор пользователя, хранимый в cookie.
+                            </li>
+                        </ul>
+                        <p>
+                            для целей повышения осведомленности посетителей Сайта <a href="https://www.sibtime.ru/">https://www.sibtime.ru/</a> о продуктах и
+                            услугах ООО "Сибтайм", предоставления релевантной рекламной информации и оптимизации
+                            рекламы,
+                            исполнения договорных обязательств, проведение рекламных кампаний и маркетинговых
+                            исследований.
+                        </p>
+                        <p>
+                            Также даю свое согласие на предоставление ООО "Сибтайм" моих персональных данных как
+                            посетителя
+                            Сайта <a href="https://www.sibtime.ru/">https://www.sibtime.ru/</a>, с которыми сотрудничает
+                            ООО "Сибтайм". ООО "Сибтайм" вправе
+                            осуществлять обработку моих персональных данных следующими способами: сбор, запись,
+                            систематизация, накопление, хранение, обновление, изменение, использование, передача
+                            (распространение, предоставление, доступ).
+                        </p>
+                        <p>
+                            Настоящее согласие вступает в силу с момента моего перехода на Сайт <a href="https://www.sibtime.ru/">https://www.sibtime.ru/</a>
+                            и
+                            действует в течение сроков, установленных действующим законодательством РФ.
+                        </p>
+                        <p>
+                            Основанием для обработки персональных данных являются: Ст. 24 Конституции Российской
+                            Федерации;
+                            ст.6 Федерального закона №152-ФЗ «О персональных данных».
+                        </p>
+                        <p>
+                            Персональные данные обрабатываются до окончания обработки. Так же обработка персональных
+                            данных
+                            может быть прекращена по запросу субъекта персональных данных.
+                        </p>
+                        <p>
+                            Хранение персональных данных, зафиксированных на бумажных носителях осуществляется согласно
+                            Федеральному закону №125-ФЗ «Об архивном деле в Российской Федерации» и иным нормативно
+                            правовым
+                            актам в области архивного дела и архивного хранения. Срок или условие прекращения обработки
+                            персональных данных: прекращение деятельности ООО "Сибтайм".
+                        </p>
+                    </div>
+                    <div class="btn-consent-box">
+                        <div class="btn btn-border consent-yes">
+                            Принимаю
+                        </div>
+                        <div class="btn btn-border consent-no">
+                            Не принимаю
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Модалка Спасибо -->
+        <div class="modal modal-thank">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Спасибо</h3>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <div class="modal-text">
+                        Ваш отзыв отправлен на модерацию
+                    </div>
+                    <div class="thank-img">
+                        <img src="../img/thank.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Модалка Спасибо за обращение -->
+        <div class="modal modal-thank-contacting">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Спасибо <br> за обращение</h3>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <div class="modal-text">
+                        Наш менеджер скоро свяжется с вами для уточнения деталей
+                    </div>
+                    <div class="thank-img">
+                        <img src="../img/thank.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Модалка Изменение данных -->
+        <div class="modal modal-lk modal-change-data">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Изменение данных</h3>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <form data-parsley-validate="" method="post" action="#" class="form">
+                        <label class="label first-elem">
+                            <input type="text" required="" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите ваше имя" class="input">
+                            <span class="placeholder-input">Ваше имя</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label">
+                            <input type="text" name="phone" data-parsley-required-message="Введите номер телефона" data-parsley-required="true" required="" data-parsley-trigger="change" class="input phone_validate">
+                            <span class="placeholder-input">Телефон</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label">
+                            <input type="email" name="email" required data-parsley-required-message="Введите ваш e-mail" data-parsley-trigger="change" class="input">
+                            <span class="placeholder-input">Ваш e-mail</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <label class="label">
+                            <input type="text" name="date" required data-parsley-required-message="Введите день рождения" data-parsley-trigger="change" class="input date_validate">
+                            <span class="placeholder-input">День рождения</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <div class="form-btn__box">
+                            <div class="chek__label">
+                                <label class="check-inner">
+                                    <input type="checkbox" name="ch" data-parsley-required="true" required="" data-parsley-multiple="ch" data-parsley-required-message="Примите согласие на обработку персональных данных" checked="checked" class="check-data">
+                                    <span class="checkbox-data"></span>
+                                </label>
+                                <span class="data-span">Я даю свое
+                                    <span class="data-span__link btn-consent">согласие на обработку персональных
+                                        данных</span>
+                                </span>
+                            </div>
+                            <button class="btn btn-border last-elem" type="submit">
+                                Сохранить
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Модалка Смена пароля -->
+        <div class="modal modal-lk modal-change-password">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Смена пароля</h3>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <form data-parsley-validate="" method="post" action="#" class="form">
+                        <label class="label first-elem">
+                            <input type="password" name="password" required="" data-parsley-trigger="change" data-parsley-required-message="Введите новый пароль" class="input js-password">
+                            <span class="placeholder-input">Новый пароль</span>
+                            <span class="password-control"><img src="../img/password-icon.svg"></span>
+                        </label>
+                        <label class="label">
+                            <input type="password" name="password" required="" data-parsley-trigger="change" data-parsley-required-message="Подтвердите пароля" class="input js-password2">
+                            <span class="placeholder-input">Подтверждение пароля</span>
+                            <span class="password-control2"><img src="../img/password-icon.svg"></span>
+                        </label>
+                        <div class="form-btn__box">
+                            <button class="btn btn-border last-elem" type="submit">
+                                Изменить
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Модалка Добавить адрес -->
+        <div class="modal modal-lk modal-add-address">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Добавить адрес</h3>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <form data-parsley-validate="" method="post" action="#" class="form">
+                        <label class="label first-elem">
+                            <input type="text" required="" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите адрес доставки" class="input">
+                            <span class="placeholder-input">Адрес доставки</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <div class="form-btn__box">
+                            <button class="btn btn-border last-elem" type="submit">
+                                Сохранить
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Модалка Изменить адрес -->
+        <div class="modal modal-lk modal-change-address">
+            <div class="overlay"></div>
+            <div class="modal-block">
+                <div class="modal-header">
+                    <h3 class="title_modal">Изменить адрес</h3>
+                    <div class="close-modal">
+                        <img src="../img/close-modal.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <form data-parsley-validate="" method="post" action="#" class="form">
+                        <label class="label first-elem">
+                            <input type="text" required="" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите адрес доставки" class="input">
+                            <span class="placeholder-input">Адрес доставки</span>
+                            <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                        </label>
+                        <div class="form-btn__box">
+                            <button class="btn btn-border last-elem" type="submit">
+                                Сохранить
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="cookie">
+            <div class="cookie__text">
+                Сайт использует файлы cookie, которые позволяют узнавать вас и получать информацию о вашем
+                пользовательском опыте. Разрешение на использование cookie необходимо для использования Сайта и его
+                сервисов, включая заказ товаров. Мы уверены, что при посещении страниц сайта вы даете согласие на
+                использование и хранение файлов cookie на вашем устройстве. Если согласны, продолжайте пользоваться
+                сайтом. Если нет – установите специальные настройки в браузере или обратитесь в техподдержку.
+            </div>
+            <div class="cookie__btn">
+                Я согласен
+            </div>
+        </div>
+    </header>
+    <div class="title-block">
+        <div class="breadcrumb">
+            <a href="#" class="breadcrumb__link">
+                Главная
+            </a>
+            <span class="slash">–</span>
+            <a href="#" class="breadcrumb__link">
+                Покупателям
+            </a>
+        </div>
+        <h1 class="title-main">
+            Служба поддержки Сибтайм
+        </h1>
+    </div>
+    <div class="content content_support-service">
+        <div class="support-service-text">
+            <p>
+                Консультации и ответы на любые вопросы Вы можете получить по телефону 8 (800) 551-90-92, заказать
+                обратный звонок или написать нам на сайте.
+            </p>
+            <p>
+                Обработка заказов осуществляется ежедневно с 09-00 до 20-00 (по красноярскому времени).
+            </p>
+        </div>
+        <section class="section-form">
+            <div class="form-img">
+                <img src="../img/bg-form.webp" alt="">
+            </div>
+            <div class="form-block">
+                <div class="title-form">
+                    Напишите нам
+                </div>
+                <form data-parsley-validate="" method="post" action="#" class="form">
+                    <label class="label">
+                        <input type="text" required="" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите ваше имя" class="input">
+                        <span class="placeholder-input">Ваше имя *</span>
+                        <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                    </label>
+                    <label class="label">
+                        <input type="text" name="phone" data-parsley-required-message="Введите контактный номер телефона" data-parsley-required="true" required="" data-parsley-trigger="change" class="input phone_validate">
+                        <span class="placeholder-input">Телефон *</span>
+                        <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                    </label>
+                    <label class="label">
+                        <input type="email" name="email" data-parsley-required-message="Введите ваш email" data-parsley-trigger="change" class="input">
+                        <span class="placeholder-input">E-mail</span>
+                        <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                    </label>
+                    <label class="label-textarea">
+                        <textarea name="comment" data-parsley-trigger="change" data-parsley-required-message="Сообщение" class="textarea"></textarea>
+                        <span class="placeholder-input">Сообщение</span>
+                        <span class="clear-input"><img src="../img/clear-input.svg" alt=""></span>
+                    </label>
+                    <div class="form-btn__box">
+                        <div class="chek__label">
+                            <label class="check-inner">
+                                <input type="checkbox" name="ch" data-parsley-required="true" required="" data-parsley-multiple="ch" data-parsley-required-message="Примите согласие на обработку персональных данных" checked="checked" class="check-data">
+                                <span class="checkbox-data"></span>
+                            </label>
+                            <span class="data-span">Я даю свое
+                                <span class="data-span__link btn-consent">согласие на обработку персональных
+                                    данных</span>
+                            </span>
+                        </div>
+                        <button class="btn btn-border" type="submit">
+                            Отправить
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-subscription">
+            <div class="footer-subscription__wrapper">
+                <div class="footer-subscription__text">
+                    Подписывайтесь и получайте бонусы,
+                    будьте в курсе новостей и акций компании
+                </div>
+                <form method="post" data-parsley-validate action="#" class="footer-form">
+                    <label class="footer-label">
+                        <input type="email" name="email" required data-parsley-trigger="change" data-parsley-required-message="Введите ваш email" class="footer-input">
+                        <span class="footer-placeholder">
+                            Ваш e-mail
+                        </span>
+                    </label>
+                    <div class="footer__checkbox-box">
+                        <label class="footer__checkbox-label">
+                            <input type="checkbox" name="footer-checkbox" class="footer__checkbox">
+                            <span class="footer__checkbox-data"></span>
+                            <span class="footer__checkbox-name">Мужчинам</span>
+                        </label>
+                        <label class="footer__checkbox-label">
+                            <input type="checkbox" name="footer-checkbox" class="footer__checkbox">
+                            <span class="footer__checkbox-data"></span>
+                            <span class="footer__checkbox-name">Женщинам</span>
+                        </label>
+                    </div>
+                    <button class="footer-form__btn">
+                        <img src="../img/btn-form-footer.svg" alt="">
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <div class="footer-nav__col">
+                <a href="#" class="footer-nav__link">
+                    Бренды
+                </a>
+                <a href="#" class="footer-nav__link">
+                    Наручные часы
+                </a>
+                <a href="#" class="footer-nav__link">
+                    Очки
+                </a>
+                <a href="#" class="footer-nav__link">
+                    Подарки и аксессуары
+                </a>
+                <a href="#" class="footer-nav__link footer-nav__link_color">
+                    Sale
+                </a>
+            </div>
+            <div class="footer-nav__col">
+                <a href="#" class="footer-nav__link">
+                    О нас
+                </a>
+                <a href="#" class="footer-nav__link">
+                    Салоны
+                </a>
+                <a href="#" class="footer-nav__link">
+                    Вакансии
+                </a>
+                <a href="#" class="footer-nav__link">
+                    Новости
+                </a>
+                <a href="#" class="footer-nav__link">
+                    Статьи
+                </a>
+            </div>
+            <div class="footer-nav__col">
+                <a href="#" class="footer-nav__link">
+                    Доставка и оплата
+                </a>
+                <a href="#" class="footer-nav__link">
+                    Обмен и возврат
+                </a>
+                <a href="#" class="footer-nav__link">
+                    Гарантии
+                </a>
+                <a href="#" class="footer-nav__link">
+                    Политика
+                </a>
+            </div>
+            <div class="footer-nav__col">
+                <a href="#" class="footer-nav__link">
+                    Онлайн-стилист
+                </a>
+                <a href="#" class="footer-nav__link">
+                    Подарочные карты
+                </a>
+                <a href="#" class="footer-nav__link">
+                    Корпоративные продажи
+                </a>
+                <a href="#" class="footer-nav__link">
+                    Бонусная система
+                </a>
+            </div>
+            <div class="footer-nav__col">
+                <a href="#" class="footer-nav__link">
+                    Сервисный центр
+                </a>
+                <a href="#" class="footer-nav__link">
+                    Служба поддержки
+                </a>
+                <a href="#" class="footer-nav__link">
+                    FAQ
+                </a>
+                <a href="#" class="footer-nav__link footer-nav__link_color">
+                    Акции
+                </a>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="footer-info__row">
+                <div class="footer-contacts">
+                    <a href="tel: 88005519092" class="footer-contacts__link">
+                        <img src="../img/phone-footer.svg" alt="">
+                        <span>8 (800) 551-90-92</span>
+                    </a>
+                    <a href="mailto:info1@sibtime.ru" class="footer-contacts__link">
+                        <img src="../img/mail-footer.svg" alt="">
+                        <span>info1@sibtime.ru</span>
+                    </a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="footer-social__link">
+                        <img src="../img/inst.png" alt="" class="footer-social__link-icon">
+                        <img src="../img/inst2.png" alt="" class="footer-social__link-hover">
+                    </a>
+                    <a href="#" class="footer-social__link">
+                        <img src="../img/vk.png" alt="" class="footer-social__link-icon">
+                        <img src="../img/vk2.png" alt="" class="footer-social__link-hover">
+                    </a>
+                    <a href="#" class="footer-social__link">
+                        <img src="../img/facebook.png" alt="" class="footer-social__link-icon">
+                        <img src="../img/facebook2.png" alt="" class="footer-social__link-hover">
+                    </a>
+                    <a href="#" class="footer-social__link">
+                        <img src="../img/youtube.png" alt="" class="footer-social__link-icon">
+                        <img src="../img/youtube2.png" alt="" class="footer-social__link-hover">
+                    </a>
+                    <a href="#" class="footer-social__link">
+                        <img src="../img/ok.png" alt="" class="footer-social__link-icon">
+                        <img src="../img/ok2.png" alt="" class="footer-social__link-hover">
+                    </a>
+                </div>
+                <div class="btn-border">
+                    Написать письмо
+                </div>
+                <div class="payment">
+                    <div class="payment-text">
+                        Принимаем к оплате:
+                    </div>
+                    <div class="payment__row">
+                        <div class="payment-link">
+                            <img src="../img/mir.svg" alt="">
+                        </div>
+                        <div class="payment-link">
+                            <img src="../img/visa.svg" alt="">
+                        </div>
+                        <div class="payment-link">
+                            <img src="../img/mastercard.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-messenger">
+                <a href="#" class="footer-messenger__link">
+                    <img src="../img/telegram.png" alt="">
+                    <span>sibTIME</span>
+                </a>
+                <a href="#" class="footer-messenger__link">
+                    <img src="../img/whatsapp.png" alt="">
+                    <span>sibTIME</span>
+                </a>
+                <a href="#" class="footer-messenger__link">
+                    <img src="../img/viber.png" alt="">
+                    <span>sibTIME</span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-row">
+            <div class="copyright">
+                © 2021, Сибтайм
+            </div>
+            <a href="#" class="developers">
+                Создание сайта
+                <img src="../img/sol.png" alt="">
+            </a>
+        </div>
+        <div class="footer-row__consent">
+            <a href="#" class="footer-link">
+                Публичная оферта
+            </a>
+            <div class="footer-link btn-consent">
+                Согласие на обработку персональных данных
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/jquery.nicescroll.min.js"></script>
+    <script src="../js/jquery.fancybox.min.js"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/jquery.maskedinput.min.js"></script>
+    <script src="../js/parsley.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/datepicker-ru.js"></script>
+    <script async defer="defer" src="http://maps.google.com/maps/api/js?key=AIzaSyDf4p3LffKDVRZJBYNqvV2DGVNVQwA1Mm4&amp;callback=drawMap"></script>
+    <script src="../js/main-script.js"></script>
+</body></html>

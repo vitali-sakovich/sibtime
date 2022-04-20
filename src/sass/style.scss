@@ -1,0 +1,96 @@
+@import 'fonts';
+
+* {
+  font-family: 'HeliosC', sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100%;
+  background: #f8f9f9;
+}
+
+header {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+footer {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+body.hidden,
+body.hidd {
+  overflow: hidden;
+}
+a,
+a:link {
+  outline: none;
+}
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/index';
+@import 'blocks/modals';
+@import 'blocks/shops';
+@import 'blocks/shop-detail';
+@import 'blocks/search';
+@import 'blocks/favorites';
+@import 'blocks/order';
+@import 'blocks/account';
+@import 'blocks/catalog';
+@import 'blocks/support-service';
+@import 'blocks/corporate-sales';
+@import 'blocks/vacancies';
+@import 'blocks/actions';
+@import 'blocks/action-detail';
+@import 'blocks/product-detail';
+@import 'blocks/compare';
+@import 'blocks/questions';
+@import 'blocks/about';
+@import 'blocks/service-center';
+@import 'blocks/news';
+@import 'blocks/brands';
+@import 'blocks/delivery';
+@import 'blocks/brand-detail';
+@import 'blocks/gift-cards';
+@import 'blocks/online-stylist';
+@import 'blocks/bonus-system';
+@import 'blocks/news-detail';
+@import 'blocks/fitting';
+@import 'blocks/media';
+
+/********* ОНЛАЙН ПРИМЕРКА **********/
+@import 'blocks/fitting';

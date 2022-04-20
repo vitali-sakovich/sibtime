@@ -1,0 +1,121 @@
+.action-banner{
+    width: 100%;
+    padding: 0 8.3%;
+    margin-bottom: 86px;
+    text-decoration: none;
+}
+.action-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.content_actions{
+    padding-top: 26px;
+    padding-bottom: 125px;
+}
+.action-all{
+    display: flex;
+    padding: 0 8.3%;
+    text-decoration: none;
+    margin-bottom: 54px;
+}
+.action-all__img{
+    width: 38.594vw;
+    min-width: 38.594vw;
+}
+.action-all__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.action-all__content{
+    padding-top: 35px;
+    padding-left: 42px;
+    background: #fff;
+    width: 100%;
+}
+.action-all__name{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.06;
+    color: #000000;
+    max-width: 357px;
+    margin-bottom: 30px;
+}
+.action-all__text{
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.59;
+    color: #000000;
+}
+.actions-cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 8.3%;
+}
+.action-card__img{
+    margin: 0 auto;
+    width: 26.016vw;
+    max-width: 333px;
+    height: 26.016vw;
+    max-height: 334px;
+}
+.action-card__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.action-card{
+    width: 26.016vw;
+    text-decoration: none;
+    background: #fff;
+}
+.action-card__content{
+    position: relative;
+}
+.action-card__date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e02020;
+    width: 71px;
+    height: 71px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    color: #fff;
+    position: absolute;
+    top: -35px;
+    right: -10px;
+}
+.action-card__date span{
+    display: block;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: normal;
+    color: #fff;
+}
+.action-card__content{
+    padding: 24px 22px 22px 29px;
+}
+.action-card__name{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #000000;
+    margin-bottom: 29px;
+    min-height: 84px;
+    padding-right: 30px;
+}
+.action-card__text{
+    display: block;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.59;
+    color: #000000;
+    min-height: 92px;
+}

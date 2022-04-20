@@ -1,0 +1,81 @@
+.gift-cards__container{
+    display: flex;
+    padding-left: 8.3%;
+    padding-top: 57px;
+}
+.gift-cards__img-wrapper{
+    width: 540px;
+    padding-bottom: 50px;
+}
+.gift-cards__row{
+    display: flex;
+    padding-left: 8.3%;
+    margin-top: 57px;
+    margin-bottom: 35px;
+}
+.gift-cards__text{
+    max-width: 358px;
+    padding-top: 22px;
+    margin-left: 58px;
+    margin-bottom: 80px;
+}
+.gift-cards__text p{
+    margin-bottom: 20px;
+}
+.gift-cards__text p span{
+    font-weight: bold;
+}
+.form-block.form-block_gift-cards{
+    padding: 54px 103px 135px 58px;
+    background: #fff;
+    margin-left: 0;
+    width: 100%;
+    max-width: 641px;
+}
+.gift-cards__img{
+    position: sticky;
+    top: 100px;
+}
+.form-block_gift-cards .modal__radio-title{
+    font-size: 12px;
+    font-weight: normal;
+    line-height: normal;
+    color: #000;
+}   
+.form-block_gift-cards .modal__radio-row{
+    margin-top: 20px;
+}
+.form-block_gift-cards .label-radio{
+    margin-bottom: 18px;
+    margin-right: 0;
+}
+.form-block_gift-cards .label-radio .radio-text{
+    min-width: 82px;
+}
+.denomination .modal__radio-row{
+    max-width: 450px;
+}
+.modal__radio-box.denomination {
+    margin-bottom: 28px;
+}
+.modal__radio-box.paymen .label-radio{
+    margin-right: 80px;
+}
+.form-block_gift-cards .data-span{
+    max-width: 220px;
+}
+.form-block_gift-cards .btn{
+    width: 207px
+}
+.modal__radio-box.paymen{
+    margin-bottom: 0;
+}
+.form-block_gift-cards .modal__radio-box{
+    padding-left: 15px;
+}
+.form-block_gift-cards .form-btn__box{
+    margin-top: 32px;
+}
+.form-block_gift-cards .text-form{
+    max-width: 430px;
+}

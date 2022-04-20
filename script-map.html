@@ -1,0 +1,266 @@
+<script type="text/javascript">
+    var map;
+    var markers = [];
+    var locations = [
+        { "name": "Алексеева, 34", "address": "​Мира проспект, 98, ​1 этаж​ Центральный район, Красноярск", "tel": "+7 (391) 272‒90‒09", "time": "Ежедневно с 10:00 до 20:00", "lat": "56.01175713176359", "lng": "92.86015456974415" },
+        { "name": "Институт искусств", "address": "Слобода Весны, Советский район, Красноярск", "tel": "+7 (391) 272‒55‒66", "time": "Ежедневно с 10:00 до 20:00", "lat": "56.04729206268887", "lng": "92.89417122406721" },
+        { "name": "На Свободном", "address": "​Телевизорная, 1 ст4, ​1 этаж Октябрьский район, Красноярск", "tel": "+7 (391) 272‒22‒11", "time": "Ежедневно с 10:00 до 20:00", "lat": "56.02223991337093", "lng": "92.79738894276429" },
+    ];
+
+    function drawMap() {
+
+        var myOptions = {
+            zoom: 12,
+            center: new google.maps.LatLng(56.0306262494447, 92.83863011963696),
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            mapTypeControl: false,
+            fullscreenControl: false,
+            disableDefaultUI: true,
+            zoomControl: true,
+            scrollwheel: false,
+        }
+
+        map = new google.maps.Map(document.getElementById("shops-modal-map"), myOptions);
+
+        var marker, i;
+        var infowindow = new google.maps.InfoWindow();
+
+        for (i = 0; i < locations.length; i++) {
+            var location = locations[i];
+            var addressMarker = location.address;
+            var nameBtnMarker = location.name;
+            var telBtnMarker = location.tel;
+            var timeBtnMarker = location.time;
+
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(location.lat, location.lng),
+                icon: {
+                    url: "../img/marker.svg",
+                    scaledSize: new google.maps.Size(43, 57)
+                },
+                map: map,
+            });
+
+            markers.push(marker);
+
+            google.maps.event.addListener(marker, 'click', (function (marker, i, addressMarker) {
+                return function () {
+                    infowindow.setContent(addressMarker);
+                    infowindow.open(map, marker);
+                }
+            })(marker, i, addressMarker));
+
+            addBtnMarker(marker, addressMarker, nameBtnMarker, telBtnMarker, timeBtnMarker, i);
+        }
+
+    }
+
+    function addBtnMarker(marker, addressMarker, nameBtnMarker, telBtnMarker, timeBtnMarker, i) {
+        const shopsList = document.querySelector('.modal-shops__list');
+        const telLink = telBtnMarker.replace(/[^0-9]/g, '');
+        const btnMarkerHtml = `
+        <div class="modal-shop" onclick="myClick(${i});">
+            <a href="#" class="modal-shop__name">
+                ${nameBtnMarker}
+            </a>
+            <div class="modal-shop__address">
+                ${addressMarker}
+            </div>
+            <a href="tel:+${telLink}" class="modal-shop__phone">
+                ${telBtnMarker}
+            </a>
+            <div class="modal-shop__time">
+                ${timeBtnMarker}
+            </div>
+        </div>`
+            ;
+        shopsList.insertAdjacentHTML('beforeend', btnMarkerHtml);
+
+        shopsList.addEventListener('click', function (e) {
+            const target = e.target;
+            const modalShopAll = document.querySelectorAll('.modal-shop');
+            Array.from(modalShopAll).forEach(modalShop => {
+                modalShop.classList.remove('active');
+            })
+            target.classList.add('active');
+        })
+    }
+    function myClick(id) {
+        google.maps.event.trigger(markers[id], 'click');
+    }
+</script>
+
+
+
+<script type="text/javascript">
+    var map;
+    var markers = [];
+    var locations = [
+        { "name": "Алексеева, 34", "address": "​Мира проспект, 98, ​1 этаж​ Центральный район, Красноярск", "tel": "+7 (391) 272‒90‒09", "time": "Ежедневно с 10:00 до 20:00", "lat": "56.01175713176359", "lng": "92.86015456974415", "is_exact": true },
+        { "name": "Институт искусств", "address": "Слобода Весны, Советский район, Красноярск", "tel": "+7 (391) 272‒55‒66", "time": "Ежедневно с 10:00 до 20:00", "lat": "56.04729206268887", "lng": "92.89417122406721", "is_exact": false },
+        { "name": "На Свободном", "address": "​Телевизорная, 1 ст4, ​1 этаж Октябрьский район, Красноярск", "tel": "+7 (391) 272‒22‒11", "time": "Ежедневно с 10:00 до 20:00", "lat": "56.02223991337093", "lng": "92.79738894276429", "is_exact": false },
+    ];
+    function drawMap() {
+        var myOptions = {
+            zoom: 12,
+            center: new google.maps.LatLng(56.0306262494447, 92.83863011963696),
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            mapTypeControl: false,
+            fullscreenControl: false,
+            disableDefaultUI: true,
+            zoomControl: true,
+            scrollwheel: false,
+        }
+        map = new google.maps.Map(document.getElementById("shops-modal-map"), myOptions);
+
+        setMarkers(locations, map);
+
+    }
+
+    function setMarkers(locations, map) {
+        for (i = 0; i < locations.length; i++) {
+            var location = locations[i];
+            var addressMarker = location.address;
+            var nameBtnMarker = location.name;
+            var telBtnMarker = location.tel;
+            var timeBtnMarker = location.time;
+            plotMarker(location, map, addressMarker, nameBtnMarker, telBtnMarker, timeBtnMarker, i);
+        }
+    }
+
+    function plotMarker(location, map, addressMarker, nameBtnMarker, telBtnMarker, timeBtnMarker, i) {
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(location.lat, location.lng),
+            icon: {
+                url: "../img/marker.svg",
+                scaledSize: new google.maps.Size(43, 57)
+            },
+            map: map,
+        });
+        markers.push(marker);
+        attachSecretMessage(map, marker, i, addressMarker);
+        addBtnMarker(marker, addressMarker, nameBtnMarker, telBtnMarker, timeBtnMarker, i);
+    }
+    function attachSecretMessage(map, marker, i, addressMarker) {
+        var infowindow = new google.maps.InfoWindow;
+        google.maps.event.addListener(map, 'click', function () {
+            infowindow.close();
+        });
+        google.maps.event.addListener(marker, 'click', (function (map, marker, i, addressMarker) {
+            return function () {
+                infowindow.setContent(addressMarker);
+                infowindow.open(map, marker);
+                console.log(i)
+            }
+        })(map, marker, i, addressMarker));
+    }
+    function addBtnMarker(marker, addressMarker, nameBtnMarker, telBtnMarker, timeBtnMarker, i) {
+        const shopsList = document.querySelector('.modal-shops__list');
+        const telLink = telBtnMarker.replace(/[^0-9]/g, '');
+        const btnMarkerHtml = `
+            <div class="modal-shop" onclick="myClick(${i});">
+                <a href="#" class="modal-shop__name">
+                    ${nameBtnMarker}
+                </a>
+                <div class="modal-shop__address">
+                    ${addressMarker}
+                </div>
+                <a href="tel:+${telLink}" class="modal-shop__phone">
+                    ${telBtnMarker}
+                </a>
+                <div class="modal-shop__time">
+                    ${timeBtnMarker}
+                </div>
+            </div>`
+            ;
+        shopsList.insertAdjacentHTML('beforeend', btnMarkerHtml);
+
+        shopsList.addEventListener('click', function (e) {
+            const target = e.target;
+            const modalShopAll = document.querySelectorAll('.modal-shop');
+            Array.from(modalShopAll).forEach(modalShop => {
+                modalShop.classList.remove('active');
+            })
+            target.classList.add('active');
+        })
+    }
+    function myClick(id) {
+        google.maps.event.trigger(markers[id], 'click');
+    }
+</script>
+
+
+
+
+<script type="text/javascript">
+    var map;
+    var map2;
+    var locations = [
+        { "name": "​Мира проспект, 98, ​1 этаж​ Центральный район, Красноярск", "lat": "56.01175713176359", "lng": "92.86015456974415", "is_exact": true },
+        { "name": "Слобода Весны, Советский район, Красноярск", "lat": "56.04729206268887", "lng": "92.89417122406721", "is_exact": false },
+        { "name": "​Телевизорная, 1 ст4, ​1 этаж Октябрьский район, Красноярск", "lat": "56.02223991337093", "lng": "92.79738894276429", "is_exact": false },
+    ];
+    var locations2 = [
+        { "name": "​Телевизорная, 1 ст4, ​1 этаж Октябрьский район, Красноярск", "lat": "56.02223991337093", "lng": "92.79738894276429", "is_exact": false }
+    ];
+    function drawMap() {
+
+        var myOptions = {
+            zoom: 12,
+            center: new google.maps.LatLng(56.0306262494447, 92.83863011963696),
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            mapTypeControl: false,
+            fullscreenControl: false,
+            disableDefaultUI: true,
+            zoomControl: true,
+            scrollwheel: false,
+        }
+        map = new google.maps.Map(document.getElementById("shops-modal-map"), myOptions);
+
+        var myOptions2 = {
+            zoom: 12,
+            center: new google.maps.LatLng(56.0306262494447, 92.83863011963696),
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            mapTypeControl: false,
+            fullscreenControl: false,
+            disableDefaultUI: true,
+            zoomControl: true,
+            scrollwheel: false,
+        }
+        map2 = new google.maps.Map(document.getElementById("map-shops-detail"), myOptions2);
+
+        setMarkers(locations, map);
+        setMarkers(locations2, map2);
+
+    }
+    function setMarkers(locations, map) {
+        for (i = 0; i < locations.length; i++) {
+            var location = locations[i];
+            var nameMarker = location.name;
+            plotMarker(location, nameMarker, map);
+        }
+    }
+
+    function plotMarker(location, nameMarker, map) {
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(location.lat, location.lng),
+            icon: {
+                url: "../img/marker.svg",
+                scaledSize: new google.maps.Size(43, 57)
+            },
+            map: map,
+        });
+        attachSecretMessage(marker, nameMarker);
+    }
+    function attachSecretMessage(marker, secretMessage) {
+        const infowindow = new google.maps.InfoWindow({
+            content: secretMessage,
+        });
+        marker.addListener("mouseover", () => {
+            infowindow.open(marker.get("map"), marker);
+        });
+        marker.addListener("mouseout", () => {
+            infowindow.close(marker.get("map"), marker);
+        });
+    }
+</script>
